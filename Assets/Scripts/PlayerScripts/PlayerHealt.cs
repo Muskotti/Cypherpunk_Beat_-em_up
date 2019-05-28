@@ -8,9 +8,10 @@ public class PlayerHealt : MonoBehaviour
     public int currentHealth;
 
     CharacterController playerMovement;
+    public GameObject deathScreen;
 
     bool damage;
-    bool isDead;
+    public bool isDead;
 
     private void Awake()
     {
@@ -41,5 +42,6 @@ public class PlayerHealt : MonoBehaviour
     {
         isDead = true;
         playerMovement.enabled = false;
+        deathScreen.SetActive(true);
     }
 }
