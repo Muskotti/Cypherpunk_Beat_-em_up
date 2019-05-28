@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     CharacterController characterController;
+    public float jumpSpeed = 8.0F;
     public float movementSpeed = 5.0f;
     private Vector3 moveDirection = Vector3.zero;
 
@@ -18,6 +19,11 @@ public class Movement : MonoBehaviour
     {
         if (characterController.isGrounded)
         {
+            if(Input.GetButton("Jump"))
+            {
+                moveDirection.y = jumpSpeed;
+            }
+
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
             moveDirection = moveDirection * movementSpeed;
         }
