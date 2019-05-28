@@ -37,7 +37,6 @@ public class PlayerHealt : MonoBehaviour
         }
     }
 
-
     void Death()
     {
         isDead = true;

@@ -6,12 +6,20 @@ public class UpgradeMenuScript : MonoBehaviour
 {
     GameObject player;
     GameObject upgradeMenuUI;
+
     bool playerInRange;
+    bool active;
+    bool pressed;
+
+    Movement playerMovement;
 
     private void Awake()
     {
+        active = false;
         player = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = player.GetComponent<Movement>();
         upgradeMenuUI = GameObject.FindGameObjectWithTag("UpgradeMenu");
+        upgradeMenuUI.SetActive(active);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,14 +40,20 @@ public class UpgradeMenuScript : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange)
+        if (playerInRange && Input.GetKeyDown("e") && pressed)
         {
+            pressed = false;
             activateMenu();
+        } else
+        {
+            pressed = true;
         }
     }
 
     private void activateMenu()
     {
-        upgradeMenuUI.SetActive(false);
+        active = !active;
+        upgradeMenuUI.SetActive(active);
+        playerMovement.SetMoveStatus(!active);
     }
 }
