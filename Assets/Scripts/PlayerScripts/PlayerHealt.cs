@@ -12,10 +12,13 @@ public class PlayerHealt : MonoBehaviour
     bool damage;
     bool isDead;
 
+    GameObject soundManager;
+
     private void Awake()
     {
         currentHealth = startHealt;
         playerMovement = GetComponent<CharacterController>();
+        soundManager = GameObject.Find("SoundManager");
     }
 
     private void Update()
@@ -28,6 +31,7 @@ public class PlayerHealt : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        soundManager.GetComponent<SoundManager>().takeDamagePlay();
         damage = true;
         currentHealth -= amount;
         
