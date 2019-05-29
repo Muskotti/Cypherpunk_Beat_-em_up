@@ -32,4 +32,9 @@ public class Movement : MonoBehaviour
         moveDirection.y -= 10f * Time.deltaTime;
         characterController.Move(moveDirection * Time.deltaTime);
     }
+
+    public void SetMoveStatus (bool status)
+    {
+        characterController.enabled = status;
+    }
 }
