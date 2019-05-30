@@ -46,7 +46,7 @@ public class Movement : MonoBehaviour
         Collider[] cols = Physics.OverlapBox(collider.bounds.center, collider.bounds.extents, collider.transform.rotation,LayerMask.GetMask("Hitboxes"));
         foreach(Collider c in cols)
         {
-            if(c.transform.root == transform)
+            if (c.transform.root == transform)
             {
                 continue;
             }
