@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     public float movementSpeed = 5.0f;
     private Vector3 moveDirection = Vector3.zero;
 
+    public Collider[] attackHitboxes;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -19,6 +21,12 @@ public class Movement : MonoBehaviour
     {
         if (characterController.isGrounded)
         {
+
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                Attack(attackHitboxes[0]);
+            }
+
             if(Input.GetButton("Jump"))
             {
                 moveDirection.y = jumpSpeed;
@@ -31,6 +39,28 @@ public class Movement : MonoBehaviour
         //Gravity
         moveDirection.y -= 10f * Time.deltaTime;
         characterController.Move(moveDirection * Time.deltaTime);
+    }
+
+    public void Attack(Collider collider)
+    {
+        Collider[] cols = Physics.OverlapBox(collider.bounds.center, collider.bounds.extents, collider.transform.rotation,LayerMask.GetMask("Hitboxes"));
+        foreach(Collider c in cols)
+        {
+            if(c.transform.root == transform)
+            {
+                continue;
+            }
+            
+            switch(c.name)
+            {
+                case "Enemy":
+                    // Refrence enemy and deal damage to it
+                    break;
+                default:
+                    Debug.Log(c.name);
+                    break;
+            }
+        }
     }
 
     public void SetMoveStatus (bool status)
