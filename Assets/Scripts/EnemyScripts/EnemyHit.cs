@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class EnemyHit : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float hitCooldown;
+    public float timeStamp;
+    public float nextCooldown;
+
+    GameObject player;
+    GameObject enemy;
+    bool inPosition;
+    
+
     void Start()
     {
-        
+        enemy = GameObject.Find("Enemy");
+        player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        timeStamp = Time.time;
+        inPosition = enemy.GetComponent<EnemyMovement>().inPosition;
+
+        if (timeStamp >= nextCooldown && inPosition)
+        {
+            hitPlayer();
+            nextCooldown = Time.time + hitCooldown;
+        }
+    }
+
+    void hitPlayer()
+    {
+        player.GetComponent<PlayerHealt>().TakeDamage(1);
     }
 }
