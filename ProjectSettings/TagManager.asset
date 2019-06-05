@@ -6,6 +6,7 @@ TagManager:
   tags:
   - UpgradeMenu
   - DeathScreen
+  - Enemy
   layers:
   - Default
   - TransparentFX
