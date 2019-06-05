@@ -633,6 +633,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1604800357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5423783163030920105, guid: 57151c0d9c32fb6429ce17bf25c36763,
+    type: 3}
+  m_PrefabInstance: {fileID: 5423783162460025479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1627878961560037275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -792,12 +798,12 @@ PrefabInstance:
     - target: {fileID: 3564347717856024600, guid: 20bcbf6919b9a054088a6cda3da42d62,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3564347717856024600, guid: 20bcbf6919b9a054088a6cda3da42d62,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.32
+      value: 5.72
       objectReference: {fileID: 0}
     - target: {fileID: 3564347717856024600, guid: 20bcbf6919b9a054088a6cda3da42d62,
         type: 3}
@@ -1310,6 +1316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: deathScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1604800357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}

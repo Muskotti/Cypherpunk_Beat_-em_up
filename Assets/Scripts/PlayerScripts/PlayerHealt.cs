@@ -15,6 +15,8 @@ public class PlayerHealt : MonoBehaviour
 
     GameObject soundManager;
 
+    public GameObject playerhit;
+
     private void Awake()
     {
         currentHealth = startHealt;
@@ -35,6 +37,8 @@ public class PlayerHealt : MonoBehaviour
         soundManager.GetComponent<SoundManager>().takeDamagePlay();
         damage = true;
         currentHealth -= amount;
+        GameObject hitmarker = Instantiate(playerhit, transform.position, Quaternion.identity) as GameObject;
+        Destroy(hitmarker, 0.2f);
         
         if (currentHealth <= 0 && !isDead)
         {

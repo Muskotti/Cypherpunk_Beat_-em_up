@@ -196,6 +196,8 @@ MonoBehaviour:
   currentHealth: 0
   deathScreen: {fileID: 0}
   isDead: 0
+  playerhit: {fileID: 8226749928745809768, guid: d2f387f7ca33392408744d8e54281682,
+    type: 3}
 --- !u!1 &6550803142822742265
 GameObject:
   m_ObjectHideFlags: 0
