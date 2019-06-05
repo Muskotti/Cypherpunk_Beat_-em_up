@@ -8,11 +8,14 @@ public class PlayerHealt : MonoBehaviour
     public int currentHealth;
 
     CharacterController playerMovement;
+    public GameObject deathScreen;
 
     bool damage;
-    bool isDead;
+    public bool isDead;
 
     GameObject soundManager;
+
+    public GameObject playerhit;
 
     private void Awake()
     {
@@ -34,6 +37,8 @@ public class PlayerHealt : MonoBehaviour
         soundManager.GetComponent<SoundManager>().takeDamagePlay();
         damage = true;
         currentHealth -= amount;
+        GameObject hitmarker = Instantiate(playerhit, transform.position, Quaternion.identity) as GameObject;
+        Destroy(hitmarker, 0.2f);
         
         if (currentHealth <= 0 && !isDead)
         {
@@ -45,5 +50,6 @@ public class PlayerHealt : MonoBehaviour
     {
         isDead = true;
         playerMovement.enabled = false;
+        deathScreen.SetActive(true);
     }
 }
