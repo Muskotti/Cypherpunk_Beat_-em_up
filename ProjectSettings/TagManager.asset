@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - UpgradeMenu
+  - DeathScreen
   - Enemy
   layers:
   - Default
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Hitboxes
   - 
   - 
   - 
