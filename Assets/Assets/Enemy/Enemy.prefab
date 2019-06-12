@@ -8,11 +8,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3462166545063242211}
-  - component: {fileID: 3663217685679476090}
-  - component: {fileID: 4034420242487662914}
-  - component: {fileID: 4034420242487662919}
-  - component: {fileID: -944758533690927545}
   - component: {fileID: 1057204145304505420}
   m_Layer: 0
   m_Name: AttackColliders
@@ -261,6 +256,7 @@ GameObject:
   - component: {fileID: 6295110126260401860}
   - component: {fileID: 5902915594182760295}
   - component: {fileID: 631858185932495206}
+  - component: {fileID: 1616282052647189666}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -301,7 +297,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb4aa24fbfbd9654196cb02e306d3074, type: 2}
+  - {fileID: 2100000, guid: ec97c80df601c994d8544a1acdc4a389, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,8 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inPosition: 0
---- !u!114 &4034420242487662919
-  inPosition: 0
 --- !u!114 &631858185932495206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,16 +356,15 @@ MonoBehaviour:
   hitCooldown: 2
   timeStamp: 0
   nextCooldown: 0
---- !u!114 &-944758533690927545
+--- !u!114 &1616282052647189666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215567609669209009}
+  m_GameObject: {fileID: 1975794774346322844}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a00389dbbf413384b8855e66f93947e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCooldown: 0
