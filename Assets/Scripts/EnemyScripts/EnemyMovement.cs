@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (player.transform.position.x < this.transform.position.x)
         {
-            if (transform.localScale.x < 0)
+            if (transform.localScale.x > 0)
             {
                 transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else if (player.transform.position.x > this.transform.position.x)
         {
-            if (transform.localScale.x > 0)
+            if (transform.localScale.x < 0)
             {
                 transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
