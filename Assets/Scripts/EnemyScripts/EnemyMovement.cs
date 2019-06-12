@@ -23,11 +23,19 @@ public class EnemyMovement : MonoBehaviour
     {
         if (player.transform.position.x < this.transform.position.x)
         {
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
             inPosition = false;
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.transform.position.x + 0.9f, player.transform.position.y, player.transform.position.z), (Time.deltaTime));
         }
         else if (player.transform.position.x > this.transform.position.x)
         {
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
             inPosition = false;
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.transform.position.x - 0.9f, player.transform.position.y, player.transform.position.z), (Time.deltaTime));
         }
