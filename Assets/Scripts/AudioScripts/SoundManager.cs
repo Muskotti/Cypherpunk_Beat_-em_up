@@ -7,6 +7,9 @@ public class SoundManager : MonoBehaviour
     AudioSource audioSource;
 
     public AudioClip Uuf;
+    public AudioClip hitSound1;
+    public AudioClip hitSound2;
+    public AudioClip enemyDeath;
 
     public GameObject menuTheme;
     public GameObject battleTheme;
@@ -33,5 +36,23 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.pitch = 1f;
         audioSource.PlayOneShot(Uuf, 2f);
+    }
+
+    public void hit1Play()
+    {
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(hitSound1, 2f);
+    }
+
+    public void hit2Play()
+    {
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(hitSound2, 2f);
+    }
+
+    public void enemyDeathSoundPlay()
+    {
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(enemyDeath, 1f);
     }
 }
