@@ -247,6 +247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Uuf: {fileID: 8300000, guid: ea090bf882b1d844fa01fb81520504f2, type: 3}
+  hitSound1: {fileID: 8300000, guid: 8ea040ee636a82a41a62d5788b2d1791, type: 3}
+  hitSound2: {fileID: 8300000, guid: 0a624f07e3d20de4aa8df3f5ff583553, type: 3}
+  enemyDeath: {fileID: 8300000, guid: 8a0de2e9cfb435c4e87440bd3720ff86, type: 3}
   menuTheme: {fileID: 0}
   battleTheme: {fileID: 1792773378}
 --- !u!4 &357397445
