@@ -270,6 +270,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7808081647872301588}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603702820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1696990122}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603702821}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603702821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1696990122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603702820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693543366
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +692,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1278319228 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 1057204145462909798, guid: 32907d0cbd30b6248a7419817e1becfa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1057204146052346144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1463148684
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +822,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1675968955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975794774346322844, guid: 32907d0cbd30b6248a7419817e1becfa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1057204146052346144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1675968961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675968955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c30ac04f02c874ebbde54a2e0d3509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1696990122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,6 +1015,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1975794774346322844, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8215567609669209009, guid: 32907d0cbd30b6248a7419817e1becfa,
         type: 3}
       propertyPath: m_IsActive
@@ -986,11 +1045,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec97c80df601c994d8544a1acdc4a389, type: 2}
-    - target: {fileID: 1975794774346322844, guid: 32907d0cbd30b6248a7419817e1becfa,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 1057204146837849823, guid: 32907d0cbd30b6248a7419817e1becfa,
         type: 3}
       propertyPath: m_TagString
@@ -1051,6 +1105,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec97c80df601c994d8544a1acdc4a389, type: 2}
+    - target: {fileID: 1057204145462909796, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
 --- !u!1001 &1627878961560037275
@@ -1771,5 +1830,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: attackHitboxes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: attackHitboxes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1278319228}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}

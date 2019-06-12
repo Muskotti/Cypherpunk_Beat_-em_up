@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
         if (characterController.isGrounded)
         {
 
-            if(Input.GetKey(KeyCode.Mouse0))
+            if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Attack(attackHitboxes[0]);
             }
@@ -53,8 +53,8 @@ public class Movement : MonoBehaviour
             
             switch(c.name)
             {
-                case "Enemy":
-                    // Refrence enemy and deal damage to it
+                case "EnemyHitbox":
+                    c.SendMessageUpwards("TakeDamage", 1);
                     break;
                 default:
                     Debug.Log(c.name);
