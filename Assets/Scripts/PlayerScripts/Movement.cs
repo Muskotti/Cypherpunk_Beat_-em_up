@@ -19,13 +19,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Debug.Log("Attack");
+            Attack(attackHitboxes[0]);
+        }
         if (characterController.isGrounded)
         {
-
-            if(Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Attack(attackHitboxes[0]);
-            }
 
             if(Input.GetButton("Jump"))
             {
