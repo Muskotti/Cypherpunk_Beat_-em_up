@@ -8,9 +8,24 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip Uuf;
 
+    public GameObject menuTheme;
+    public GameObject battleTheme;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+    }
+
+    // Music
+    public void menuThemePlay()
+    {
+        menuTheme.SetActive(true);
+        battleTheme.SetActive(false);
+    }
+    public void battleThemePlay()
+    {
+        battleTheme.SetActive(true);
+        menuTheme.SetActive(false);
     }
 
     // Sound effects

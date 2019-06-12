@@ -22,6 +22,7 @@ public class PlayerHealt : MonoBehaviour
         currentHealth = startHealt;
         playerMovement = GetComponent<CharacterController>();
         soundManager = GameObject.Find("SoundManager");
+        deathScreen.SetActive(false);
     }
 
     private void Update()
