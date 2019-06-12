@@ -36,6 +36,21 @@ public class Movement : MonoBehaviour
             moveDirection = moveDirection * movementSpeed;
         }
 
+        if (moveDirection.x > 0)
+        {
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
+        }
+        else if (moveDirection.x < 0)
+        {
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
+        }
+
         //Gravity
         moveDirection.y -= 10f * Time.deltaTime;
         characterController.Move(moveDirection * Time.deltaTime);
