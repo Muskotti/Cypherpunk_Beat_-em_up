@@ -1808,6 +1808,30 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: player80
+      value: 
+      objectReference: {fileID: 21300000, guid: 017c59ed56b3d25428c70b8096ce80ec,
+        type: 3}
+    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: player60
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ec37f3eda2b3494698bd98d4bca67a7,
+        type: 3}
+    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: player40
+      value: 
+      objectReference: {fileID: 21300000, guid: b39bf7fcf0a17d24d97bcc219c4d60b2,
+        type: 3}
+    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: player20
+      value: 
+      objectReference: {fileID: 21300000, guid: fd01fdc9f27295c4390e3aebd9a531e8,
+        type: 3}
     - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
         type: 3}
       propertyPath: attackHitboxes.Array.size
