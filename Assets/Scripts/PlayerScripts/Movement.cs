@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     public float movementSpeed = 5.0f;
     private Vector3 moveDirection = Vector3.zero;
 
+    public Animator animator;
+
     public Collider[] attackHitboxes;
 
     void Start()
@@ -23,7 +25,9 @@ public class Movement : MonoBehaviour
         {
             Debug.Log("Attack");
             Attack(attackHitboxes[0]);
+            animator.SetTrigger("punchTrigger");
         }
+
         if (characterController.isGrounded)
         {
 

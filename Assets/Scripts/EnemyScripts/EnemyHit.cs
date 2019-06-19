@@ -15,7 +15,7 @@ public class EnemyHit : MonoBehaviour
 
     void Start()
     {
-        enemy = GameObject.Find("Enemy");
+        enemy = gameObject;
         player = GameObject.Find("Player");
     }
 
