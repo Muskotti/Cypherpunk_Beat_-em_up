@@ -11,13 +11,12 @@ public class UpgradeMenuScript : MonoBehaviour
     bool active;
     bool pressed;
 
-    Movement playerMovement;
+    public Movement playerMovement;
 
     private void Awake()
     {
         active = false;
         player = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = player.GetComponent<Movement>();
         upgradeMenuUI = GameObject.FindGameObjectWithTag("UpgradeMenu");
         upgradeMenuUI.SetActive(active);
     }

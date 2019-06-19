@@ -9,13 +9,13 @@ public class damagearea : MonoBehaviour
 
     GameObject player;
     bool playerInRange;
-    PlayerHealt playerHealth;
+    public PlayerHealt playerHealth;
     float timer;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<PlayerHealt>();
+        //playerHealth = player.GetComponent<PlayerHealt>();
     }
 
     private void OnTriggerEnter(Collider other)
