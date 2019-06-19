@@ -6,8 +6,7 @@ public class PlayerHealt : MonoBehaviour
 {
     public int startHealt = 5;
     public int currentHealth;
-
-    CharacterController playerMovement;
+    
     public GameObject deathScreen;
 
     bool damage;
@@ -16,6 +15,7 @@ public class PlayerHealt : MonoBehaviour
     GameObject soundManager;
 
     public GameObject playerhit;
+    private GameObject player;
 
     public Sprite player80;
     public Sprite player60;
@@ -25,17 +25,9 @@ public class PlayerHealt : MonoBehaviour
     private void Awake()
     {
         currentHealth = startHealt;
-        playerMovement = GetComponent<CharacterController>();
         soundManager = GameObject.Find("SoundManager");
         deathScreen.SetActive(false);
-    }
-
-    private void Update()
-    {
-        if(damage)
-        {
-            // set playerer to lover healt sprite
-        }
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void TakeDamage(int amount)
@@ -70,7 +62,7 @@ public class PlayerHealt : MonoBehaviour
     void Death()
     {
         isDead = true;
-        playerMovement.enabled = false;
         deathScreen.SetActive(true);
+        player.SendMessage("SetMoveStatus",false);
     }
 }

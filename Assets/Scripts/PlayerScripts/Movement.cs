@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
 
     public Collider[] attackHitboxes;
 
-    void Start()
+    void Awake()
     {
         characterController = GetComponent<CharacterController>();
     }
