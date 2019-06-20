@@ -10,19 +10,19 @@ public class EnemyHit : MonoBehaviour
 
     GameObject player;
     GameObject enemy;
-    bool inPosition;
+    public bool inPosition;
     
 
     void Start()
     {
-        enemy = GameObject.Find("Enemy");
+        enemy = gameObject;
         player = GameObject.Find("Player");
     }
 
     void Update()
     {
         timeStamp = Time.time;
-        inPosition = enemy.GetComponent<EnemyMovement>().inPosition;
+        inPosition = enemy.GetComponent<Pathfinding.AIDestinationSetter>().inPosition;
 
         if (timeStamp >= nextCooldown && inPosition)
         {
