@@ -62,7 +62,13 @@ namespace Pathfinding {
                 ai.destination = new Vector3(target.transform.position.x - 0.7f, target.transform.position.y, target.transform.position.z);
             }
 
-            if (ai.reachedEndOfPath)
+            /*if (ai.reachedEndOfPath && (ai.position == new Vector3(target.transform.position.x + 0.7f, ai.position.y, ai.position.z) ||
+                ai.position == new Vector3(target.transform.position.x - 0.7f, ai.position.y, ai.position.z)))
+            {
+                inPosition = true;
+            }*/
+
+            if (ai.reachedEndOfPath && Vector3.Distance(transform.position, target.position) < 1f)
             {
                 inPosition = true;
             }
