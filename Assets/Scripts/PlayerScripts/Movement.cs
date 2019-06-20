@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public Animator animator;
 
     public Collider[] attackHitboxes;
+    public bool IsDead;
 
     void Awake()
     {
@@ -21,43 +22,46 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (!IsDead)
         {
-            Debug.Log("Attack");
-            Attack(attackHitboxes[0]);
-            animator.SetTrigger("punchTrigger");
-        }
-
-        if (characterController.isGrounded)
-        {
-
-            if(Input.GetButton("Jump"))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                moveDirection.y = jumpSpeed;
+                Debug.Log("Attack");
+                Attack(attackHitboxes[0]);
+                animator.SetTrigger("punchTrigger");
             }
 
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            moveDirection = moveDirection * movementSpeed;
-        }
-
-        if (moveDirection.x > 0)
-        {
-            if (transform.localScale.x < 0)
+            if (characterController.isGrounded)
             {
-                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-            }
-        }
-        else if (moveDirection.x < 0)
-        {
-            if (transform.localScale.x > 0)
-            {
-                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-            }
-        }
 
-        //Gravity
-        moveDirection.y -= 10f * Time.deltaTime;
-        characterController.Move(moveDirection * Time.deltaTime);
+                if (Input.GetButton("Jump"))
+                {
+                    moveDirection.y = jumpSpeed;
+                }
+
+                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+                moveDirection = moveDirection * movementSpeed;
+            }
+
+            if (moveDirection.x > 0)
+            {
+                if (transform.localScale.x < 0)
+                {
+                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                }
+            }
+            else if (moveDirection.x < 0)
+            {
+                if (transform.localScale.x > 0)
+                {
+                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                }
+            }
+
+            //Gravity
+            moveDirection.y -= 10f * Time.deltaTime;
+            characterController.Move(moveDirection * Time.deltaTime);
+        }
     }
 
     public void Attack(Collider collider)
@@ -85,5 +89,10 @@ public class Movement : MonoBehaviour
     public void SetMoveStatus (bool status)
     {
         characterController.enabled = status;
+    }
+
+    public void SetDeadStatus(bool status)
+    {
+        IsDead = status;
     }
 }

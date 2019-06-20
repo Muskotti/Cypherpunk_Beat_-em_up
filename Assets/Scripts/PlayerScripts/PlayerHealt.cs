@@ -64,5 +64,6 @@ public class PlayerHealt : MonoBehaviour
         isDead = true;
         deathScreen.SetActive(true);
         player.SendMessage("SetMoveStatus",false);
+        player.SendMessage("SetDeadStatus",true);
     }
 }
