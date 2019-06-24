@@ -728,12 +728,12 @@ PrefabInstance:
     - target: {fileID: 8813084003367065318, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.78
+      value: 1.38
       objectReference: {fileID: 0}
     - target: {fileID: 8813084003367065318, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.12
+      value: 17.06
       objectReference: {fileID: 0}
     - target: {fileID: 8813084003367065318, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
@@ -785,6 +785,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1178985412006039955, guid: a557911a698a33f478c7a6468f6a771c,
+        type: 3}
+      propertyPath: m_Range
+      value: 17.56531
+      objectReference: {fileID: 0}
     - target: {fileID: 1178985412219646414, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
       propertyPath: m_Range
@@ -804,11 +809,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BounceIntensity
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178985412006039955, guid: a557911a698a33f478c7a6468f6a771c,
-        type: 3}
-      propertyPath: m_Range
-      value: 17.56531
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a557911a698a33f478c7a6468f6a771c, type: 3}
