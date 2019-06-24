@@ -5,7 +5,7 @@ using UnityEngine;
 public class UpgradeMenuScript : MonoBehaviour
 {
     GameObject player;
-    GameObject upgradeMenuUI;
+    public GameObject upgradeMenuUI;
 
     bool playerInRange;
     bool active;
@@ -15,8 +15,7 @@ public class UpgradeMenuScript : MonoBehaviour
     {
         active = false;
         player = GameObject.FindGameObjectWithTag("Player");
-        upgradeMenuUI = GameObject.FindGameObjectWithTag("UpgradeMenu");
-        upgradeMenuUI.SetActive(active);
+        upgradeMenuUI.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
