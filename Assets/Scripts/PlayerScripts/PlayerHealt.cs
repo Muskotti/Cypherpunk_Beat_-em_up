@@ -17,10 +17,7 @@ public class PlayerHealt : MonoBehaviour
     public GameObject playerhit;
     private GameObject player;
 
-    public Sprite player80;
-    public Sprite player60;
-    public Sprite player40;
-    public Sprite player20;
+    public Animator animator;
 
     private void Awake()
     {
@@ -40,16 +37,16 @@ public class PlayerHealt : MonoBehaviour
         
         switch (currentHealth) {
             case 4:
-                this.GetComponent<SpriteRenderer>().sprite = player80;
+                animator.SetTrigger("idle80Trigger");
                 break;
             case 3:
-                this.GetComponent<SpriteRenderer>().sprite = player60;
+                animator.SetTrigger("idle60Trigger");
                 break;
             case 2:
-                this.GetComponent<SpriteRenderer>().sprite = player40;
+                animator.SetTrigger("idle40Trigger");
                 break;
             case 1:
-                this.GetComponent<SpriteRenderer>().sprite = player20;
+                animator.SetTrigger("idle20Trigger");
                 break;
         }
 
