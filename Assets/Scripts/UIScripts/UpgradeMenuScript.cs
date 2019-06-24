@@ -11,8 +11,6 @@ public class UpgradeMenuScript : MonoBehaviour
     bool active;
     bool pressed;
 
-    public Movement playerMovement;
-
     private void Awake()
     {
         active = false;
@@ -53,6 +51,6 @@ public class UpgradeMenuScript : MonoBehaviour
     {
         active = !active;
         upgradeMenuUI.SetActive(active);
-        playerMovement.SetMoveStatus(!active);
+        player.SendMessage("SetMoveStatus", !active);
     }
 }
