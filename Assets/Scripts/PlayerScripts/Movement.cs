@@ -26,7 +26,6 @@ public class Movement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Debug.Log("Attack");
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
             }
