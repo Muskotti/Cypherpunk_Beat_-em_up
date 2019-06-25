@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class UpgradeMenuScript : MonoBehaviour
+public class LevelEnd : MonoBehaviour
 {
     GameObject player;
-    public GameObject upgradeMenuUI;
 
     bool playerInRange;
-    bool active;
-    bool pressed;
+
+    public string text;
 
     private void Awake()
     {
-        active = false;
         player = GameObject.FindGameObjectWithTag("Player");
-        upgradeMenuUI.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,20 +34,9 @@ public class UpgradeMenuScript : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown("e") && pressed)
+        if (playerInRange && Input.GetKeyDown("e"))
         {
-            pressed = false;
-            activateMenu();
-        } else
-        {
-            pressed = true;
+            SceneManager.LoadScene("MainMenu");
         }
-    }
-
-    private void activateMenu()
-    {
-        active = !active;
-        upgradeMenuUI.SetActive(active);
-        player.SendMessage("SetMoveStatus", !active);
     }
 }
