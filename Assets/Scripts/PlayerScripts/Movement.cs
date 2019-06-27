@@ -42,6 +42,7 @@ public class Movement : MonoBehaviour
                 moveDirection = moveDirection * movementSpeed;
             }
 
+            // Sprite flip
             if (moveDirection.x > 0)
             {
                 if (transform.localScale.x < 0)
@@ -57,7 +58,17 @@ public class Movement : MonoBehaviour
                 }
             }
 
-            //Gravity
+            // Walking animation
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            {
+                animator.SetBool("isWalking", true);
+            }
+            else
+            {
+                animator.SetBool("isWalking", false);
+            }
+
+                //Gravity
             moveDirection.y -= 10f * Time.deltaTime;
             characterController.Move(moveDirection * Time.deltaTime);
         }

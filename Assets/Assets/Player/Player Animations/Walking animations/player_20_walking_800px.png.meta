@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 9b4c0bbb557409d4d99a2f146087e06d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3235198239097703579
+    second: player_20_walking_800px_0
+  - first:
+      213: 3248293028602053366
+    second: player_20_walking_800px_1
+  - first:
+      213: 1851634516682391639
+    second: player_20_walking_800px_2
+  - first:
+      213: 1277981090016355384
+    second: player_20_walking_800px_3
+  - first:
+      213: -5906935457786566670
+    second: player_20_walking_800px_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -82,11 +97,116 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: player_20_walking_800px_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 404
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9764f87964b91174cba5a98059e569b8
+      internalID: 3235198239097703579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_20_walking_800px_1
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 279
+        height: 800
+      alignment: 9
+      pivot: {x: 0.7284767, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d278fdaa2d96b458fdd81fc10c1154
+      internalID: 3248293028602053366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_20_walking_800px_2
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8de30e0bffb994bb771b5147083d0b
+      internalID: 1851634516682391639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_20_walking_800px_3
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 0
+        width: 404
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3818d3bb3c47fc64aaae5ce73b38a2cb
+      internalID: 1277981090016355384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_20_walking_800px_4
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 0
+        width: 379
+        height: 800
+      alignment: 9
+      pivot: {x: 0.5934414, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88672496aeee37a469e715ff90486362
+      internalID: -5906935457786566670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7af28b85e5530c045a71bccae5aa4bec
     internalID: 0
     vertices: []
     indices: 
