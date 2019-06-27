@@ -62,6 +62,7 @@ public class PlayerHealt : MonoBehaviour
         deathScreen.SetActive(true);
         player.SendMessage("SetMoveStatus",false);
         player.SendMessage("SetDeadStatus",true);
+        animator.SetBool("idle2", false);
 
         if (player.transform.localScale.x >= 0)
         {
