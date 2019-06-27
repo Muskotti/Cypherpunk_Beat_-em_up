@@ -1086,7 +1086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475195469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Soldiers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504097347}
   m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0.48, y: 0.256, z: 11.21}
+  m_LocalPosition: {x: 0.48, y: 0.256, z: 11.604}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1463148685}
@@ -1422,7 +1422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 515986046}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Scientists
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1482,7 @@ PrefabInstance:
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.07
+      value: 7.43
       objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
@@ -2040,7 +2040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1341516250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Guards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,7 +2575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435316034}
   - component: {fileID: 1435316035}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2613,7 +2613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIew+n6YsUAIAAPwEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF9VMlu2zAQ/RWD58aQvLu3VnacHhwbcYtcdKHJkUWYIgUu8RL430tSsqWoQE8S3nsz82aRPhETugRipFopRteSAvreQ/4dfes15Auc8UGKHbvCXfPOqMm9CAfNGzZMOjz2YVoWYBQjP8SBe3HkQCtYJlWxpAdIpDbawRnmGhylpPHRwkGfPXSuAy718+qfvZt7IyAMqEY1nvfnk+l0MJx15LP+OJqO4lmIsoJwXJRAvfsmeBDfi8TjoBOusVrimyCSc6ZrV8hcytB1gkttXU9OQBl2XQY/Xp8DO+TGJ24Hb7JMg6mtKXxZMOWGVWVFP2U1wQLrY2XsA3MLj36rlOt/2Kc40JmSxcu9ahz5CiZn5PiGLwRr0xpwG158tW3FCfMj3nN4z0G8ypWSVlBHGmV9qNUwWLRSPTpLciDHRld57YC2/O9Kb6H3c8JZsfdIf1QBOy7DtOdeC8rt5ZczHE5E1xkc6k380fAbH9q3VBPPTGnjqLpL4d3tpVVeipZhZr4ZaxKpBAS49lyCwNxcti6N6S6ww7XKdphn7L+aunjN3T+GTkiAG30UdaitPD2WpXN5WoPON9ZwJqAx7YlXN6dEClHdV3sm97CdVRkmrbCDZfTraaF4OCHRaDjL5oNsFkfkaT+iABSi0WA0G0cTjMLtMeH6xHxbGa3H47YmmuTC3dn9Z9JbKVyGW6cKn1bsWsjWyJnI5I4oALGpMjyMg3JF3DdJl5S5Ae3AGCbCvtFnirgkR6DpI1EaOl2ejcJpkyVFJfuQxiMpSsIvJEU3dPsLUEsDBBQAAAgIAAAQIezWcASEbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJKhsVmygYmxRZqlUZqFoUGybpJJSmpqSqqBiZGJhamBWaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7D6fpixQAgAA/AQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJAAAAAAAAAAAAAAAnQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABUAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAQIewolhwJWQIAAAAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMuS2jAQ/BVK54SyzWMht8SwbA67UEtSe/FFSGOsQpZceiyv4t8jyQY73hOmp2emp2fsK2JCV0CMVCvF6KukgH4MkH9G3wZt8AVOeC/Fll3gzvlg1BSehAPnHRsmHR77NC1LMIqRn2LPPTlyoBUsl6pc0j2kUhvt4BxzDS6kpPHZwkHXATo1Cefm9+J/Bzf3REAYUC1rMh/Op09PSY88G06ip3E8CzlWEI7LCqjX3qYm8b1FPAk84cZqKH4EIjlnutGEzLkKM6e40tZN5AiUYTdjUBMNvYIC2L4w7u+om77Ocw2mEafwecGUM6uui37J2sES60Mt7RNz6ztN4iSoqou+fonHUTIKhFzJ8uXeOY58F1MwcnjHZ4K16ZjchRet+Dh4dMT8gHccPgoQb3KlpBXUBY2yPtVqSBadUo/p0gLIoeXVanugrb6uNW7Xegvzn1LOyl3wMq6BLZfB87nPAeW289sJDmeim0oO9SL+aviD9917agLPTGnjQk1D4dXtpFWeipbBMz+MNalUAgLcaK5AYG7OG1fG9JfYi3Xa9iLP2L85TfMmdn8heikBbvlR1Att5PGxLF3I4yvoYm0NZwJa0T7w5nxKpRD1jXU9uadtrcox6aTtLaP/HxeKR1MSjUezfJ7kszgi33djCkAhGifj2SSaYhRujwk3J+abWmhjj9uaaIsLd2f3D8pgpXAV7p0qfFyxSyk7ljORyy1RAGJdV3gIB+WauDeTLilzBm3BGCbCvtE1Q1ySA9DsUSgLky5PRuGsrZKhin1K45EMpeEzkqEbuv0DUEsDBBQAAAgIAAAQIezWcASEbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJKhsVmygYmxRZqlUZqFoUGybpJJSmpqSqqBiZGJhamBWaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7CiWHAlZAgAAAAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJAAAAAAAAAAAAAAApgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3685,6 +3685,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 987799637636135712, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 987799637636135713, guid: c25e219d296a5a5469e027f863f72a30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3765,6 +3770,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 586668546}
+    - target: {fileID: 987799636274560695, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 987799636565047626, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 987799636489601918, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 987799636924902701, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c25e219d296a5a5469e027f863f72a30, type: 3}
 --- !u!1001 &3021582411538955132
@@ -3778,6 +3803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950985653101800141, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5950985653101800140, guid: 52f0c9b7d94621c488e2a97583b93965,
         type: 3}
@@ -3844,6 +3874,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 586668546}
+    - target: {fileID: 5950985651271511898, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950985652029073575, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950985651953504915, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950985652457749696, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52f0c9b7d94621c488e2a97583b93965, type: 3}
 --- !u!1001 &4643151387846062039
@@ -4176,7 +4226,7 @@ PrefabInstance:
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
@@ -4321,6 +4371,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748998, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748998, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8897130281623748999, guid: 32907d0cbd30b6248a7419817e1becfa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4386,6 +4446,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 586668546}
+    - target: {fileID: 8897130282476766225, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897130282700342252, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897130281248135051, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897130282624793048, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
 --- !u!4 &8897130282215068080 stripped

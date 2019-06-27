@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
 
     public Collider[] attackHitboxes;
     public bool IsDead;
+    public float idleTimer = 0f;
 
     void Awake()
     {
@@ -22,12 +23,16 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        idleTimer += Time.deltaTime;
+
         if (!IsDead)
         {
+            // Attack
             if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0)
             {
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
+                idleTimer = 0;
             }
 
             if (characterController.isGrounded)
@@ -42,6 +47,7 @@ public class Movement : MonoBehaviour
                 moveDirection = moveDirection * movementSpeed;
             }
 
+            // Sprite flip
             if (moveDirection.x > 0)
             {
                 if (transform.localScale.x < 0)
@@ -55,6 +61,27 @@ public class Movement : MonoBehaviour
                 {
                     transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
                 }
+            }
+
+            // Walking animation
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            {
+                idleTimer = 0;
+                animator.SetBool("isWalking", true);
+            }
+            else
+            {
+                animator.SetBool("isWalking", false);
+            }
+
+            // Trigger idle2 animation
+            if (idleTimer >= 2)
+            {
+                animator.SetBool("idle2", true);
+            }
+            else
+            {
+                animator.SetBool("idle2", false);
             }
 
             //Gravity

@@ -185,6 +185,7 @@ MonoBehaviour:
   attackHitboxes:
   - {fileID: 2230475141706080300}
   IsDead: 0
+  idleTimer: 0
 --- !u!114 &-6222934569610479902
 MonoBehaviour:
   m_ObjectHideFlags: 0
