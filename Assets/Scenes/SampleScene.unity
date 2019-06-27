@@ -1289,7 +1289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504097347}
   m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0.48, y: 0.256, z: 11.21}
+  m_LocalPosition: {x: 0.48, y: 0.256, z: 11.604}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1463148685}
@@ -1482,7 +1482,7 @@ PrefabInstance:
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.07
+      value: 7.43
       objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
@@ -2574,6 +2574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1435316034}
+  - component: {fileID: 1435316035}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -2598,6 +2599,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1435316035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435316033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAQIey41CsOWAIAAP4EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK503K5pHA3nYdQvaQR4Vs5eKLkMZYhSy59AiQFP++I9lgr3PCTPfM9PSM/UWEsjUwp83KCP6oOZCfIxKeyY9RBz7AgW61WotPOHPeBXdlINHIeaVOaIynIc3qCpwR7JfaykBOMOiVKLSplnwLmbbOYrig0gJCRruQrTD0NSKHNuHY/n6G39EJnxgoB6ZjzRbXi5vb2/GAPL+eJbfTdB5zvGKSVjXwoL1LHafnFuks8hSO1VLCCExLKWyribhjHWfOaG09ToQELijOGNUk10FBCWJbOvw76ac/F4UF14oz9HgnDJrV1CW/deNgRe2ukfZBpQ+dZuk4qmqKPn7Dr9IIF0ZXD+e+aRJ6uFKw3Ss9Mmpdz+J++K6TnkaH9lTu6EbCewnqSa+M9ooj6IwPqd7C+K5X6jJbVgLbdbxG6yDo6+9LTbulnuL0h0yKahOdTJvAWuro+CLkgMHd/EHB8UhsWwmjQcRfC29027+mFrgXxjqE2oYqqNtobwKVLKNnYRjvMm0UxHCruQZFpTu+YBk3XOEA67UdIPc0vDdt8xY7vw6DlBju+EkygF70/rIsW+r9I9jy2TspFHSiA/CEPmVaqebC+p6c09beFJT10rZe8P9Pi6STG5ZMJ/NiMS7macKuNlMOwCGZjqfzWXJDSbw9oXBOKl8aoa09uDXVFVd4Z+fPyWhlaB2vnRu6X4nPSvcsF6rQa2YA1HNT4SIcDDbB95IvuUCD1uCcUHHf5CsnUrMd8PxSKI+TLg/O0LyrkpNafGgXIjnJ4kckJydy+gdQSwMEFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSs9BRUEovSizIKAYKGII4pZkpIHa0kqGxWbKBibFFmqVRmoWhQbJukklKampKqoGJkYmFqYFZolIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAECHsuNQrDlgCAAD+BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAECHs1nAEhGwAAAB3AAAACQAkAAAAAAAAAAAAAAClAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFwDAAAAAA==
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
 --- !u!1 &1463148684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,7 +4176,7 @@ PrefabInstance:
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
@@ -4264,6 +4320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748998, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8897130281623748999, guid: 32907d0cbd30b6248a7419817e1becfa,
         type: 3}
