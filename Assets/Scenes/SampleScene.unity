@@ -3846,6 +3846,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 586668546}
+    - target: {fileID: 3892589408708624257, guid: c25e219d296a5a5469e027f863f72a30,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 987799636274560695, guid: c25e219d296a5a5469e027f863f72a30,
         type: 3}
       propertyPath: m_Layer
@@ -3950,6 +3955,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 586668546}
+    - target: {fileID: 508801580763994244, guid: 52f0c9b7d94621c488e2a97583b93965,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5950985651271511898, guid: 52f0c9b7d94621c488e2a97583b93965,
         type: 3}
       propertyPath: m_Layer
