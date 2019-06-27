@@ -62,5 +62,15 @@ public class PlayerHealt : MonoBehaviour
         deathScreen.SetActive(true);
         player.SendMessage("SetMoveStatus",false);
         player.SendMessage("SetDeadStatus",true);
+
+        if (player.transform.localScale.x >= 0)
+        {
+            player.transform.Rotate(0, 0, 90);
+        }
+        else if (player.transform.localScale.x <= 0)
+        {
+            player.transform.Rotate(0, 0, -90);
+        }
+        transform.localPosition = new Vector3(transform.localPosition.x, 0.253f, 7.68f);
     }
 }

@@ -24,7 +24,7 @@ public class EnemyHit : MonoBehaviour
         timeStamp = Time.time;
         inPosition = enemy.GetComponent<Pathfinding.AIDestinationSetter>().inPosition;
 
-        if (timeStamp >= nextCooldown && inPosition)
+        if (timeStamp >= nextCooldown && inPosition && player.GetComponent<PlayerHealt>().currentHealth > 0)
         {
             hitPlayer();
             nextCooldown = Time.time + hitCooldown;

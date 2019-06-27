@@ -19,7 +19,7 @@ namespace Pathfinding {
 		IAstarAI ai;
         public bool inPosition = false;
 
-		void OnEnable () {
+        void OnEnable () {
 			ai = GetComponent<IAstarAI>();
 			// Update the destination right before searching for a path as well.
 			// This is enough in theory, but this script will also update the destination every
@@ -40,7 +40,6 @@ namespace Pathfinding {
             }
 		}
 
-        // TEST
         public void moveTowardsPlayer()
         {
             if (target.transform.position.x < this.transform.position.x)
@@ -73,6 +72,5 @@ namespace Pathfinding {
                 inPosition = true;
             }
         }
-        //----------------------//
     }
 }
