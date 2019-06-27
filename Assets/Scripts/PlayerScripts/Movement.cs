@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
     {
         if (!IsDead)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0)
             {
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
