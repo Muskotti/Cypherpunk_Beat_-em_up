@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 207}
+  m_AnchoredPosition: {x: 331, y: 32}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &525631935
@@ -69,8 +69,8 @@ MonoBehaviour:
 
     Punch faster'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8171b74a5d8d6714f91aed256801b7ad, type: 2}
-  m_sharedMaterial: {fileID: 7340244016543715279, guid: 8171b74a5d8d6714f91aed256801b7ad,
+  m_fontAsset: {fileID: 11400000, guid: b769b610320fb054e97510789daf7a16, type: 2}
+  m_sharedMaterial: {fileID: -5399481713492924659, guid: b769b610320fb054e97510789daf7a16,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 10
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -195,7 +195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 352, y: -57}
+  m_AnchoredPosition: {x: 494, y: -230}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1728714074
@@ -314,7 +314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -71}
+  m_AnchoredPosition: {x: 185, y: -238}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1728739756
@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 435}
+  m_AnchoredPosition: {x: 70, y: 416}
   m_SizeDelta: {x: 1100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5838236667947166585
@@ -495,8 +495,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "So you want some upgrades eh! \nWell we can sell you some fastpunch fists!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8171b74a5d8d6714f91aed256801b7ad, type: 2}
-  m_sharedMaterial: {fileID: 7340244016543715279, guid: 8171b74a5d8d6714f91aed256801b7ad,
+  m_fontAsset: {fileID: 11400000, guid: b769b610320fb054e97510789daf7a16, type: 2}
+  m_sharedMaterial: {fileID: -5399481713492924659, guid: b769b610320fb054e97510789daf7a16,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -522,8 +522,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 58
-  m_fontSizeBase: 58
+  m_fontSize: 67
+  m_fontSizeBase: 67
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 31
+  m_firstOverflowCharacterIndex: 57
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -8.07959, y: 0, z: -125.6499, w: 0}
+  m_margin: {x: 227.5008, y: 0, z: -152.5653, w: -102.46173}
   m_textInfo:
     textComponent: {fileID: 5838236667947166584}
     characterCount: 73
@@ -568,7 +568,7 @@ MonoBehaviour:
     spaceCount: 14
     wordCount: 14
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -655,14 +655,14 @@ RectTransform:
   m_GameObject: {fileID: 8542989594328319825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9114, y: 0.9114, z: 0.9114}
   m_Children: []
   m_Father: {fileID: 5838236668272836863}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 827, y: 433}
+  m_AnchoredPosition: {x: 849.4, y: 359}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5749073055094013724
