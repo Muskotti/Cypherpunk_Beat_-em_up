@@ -200,9 +200,10 @@ MonoBehaviour:
   IsDead: 0
   idleTimer: 0
   punchTimer: 0
-  punchTimerFixed: 0
+  punchTimerFixed: 0.4
   walkTimer: 0
-  walkTimerFixed: 0
+  walkTimerFixed: 0.4
+  interacting: 0
 --- !u!114 &-6222934569610479902
 MonoBehaviour:
   m_ObjectHideFlags: 0
