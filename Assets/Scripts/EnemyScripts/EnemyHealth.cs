@@ -1,24 +1,58 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyHealth : MonoBehaviour
 {
     float health;
+    public float stunTimer;
+    public float stunCountdown;
+    bool isStunned;
 
     GameObject soundManager;
+    public Animator animator;
 
     public GameObject enemyhit;
     public GameObject enemydead;
 
     void Start()
     {
-        health = 5;
+        health = 3;
+        stunCountdown = stunTimer;
+        isStunned = false;
         soundManager = GameObject.Find("SoundManager");
+    }
+
+    private void Update()
+    {
+        if (isStunned)
+        {
+            stunCountdown = stunCountdown -= Time.deltaTime;
+        }
+
+        if (stunCountdown <= 0)
+        {
+            isStunned = false;
+            stunCountdown = stunTimer;
+            animator.SetBool("isStunned", false);
+
+            // Enable scripts after stun ends
+            GetComponent<EnemyHit>().enabled = true;
+            GetComponent<AIDestinationSetter>().EnableMovement();
+        }
     }
 
     private void TakeDamage(float damage)
     {
+        // Stun code
+        animator.SetBool("isStunned", true);
+        isStunned = true;
+        stunCountdown = stunTimer;
+
+        // Disable walking and punching when stunned
+        GetComponent<EnemyHit>().enabled = false;
+        GetComponent<AIDestinationSetter>().DisableMovement();
 
         if (health > 1)
         {

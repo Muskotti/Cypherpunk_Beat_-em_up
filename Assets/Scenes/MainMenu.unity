@@ -1135,5 +1135,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_text
+      value: Cyber' Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f3c0efacb7b774ca7ed03500001219, type: 3}
