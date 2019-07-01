@@ -4290,6 +4290,26 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 103135313}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: punchTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: punchTimerFixed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: walkTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: walkTimerFixed
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}
 --- !u!1001 &8251334225986852812
