@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
 
             // Enable scripts after stun ends
             GetComponent<EnemyHit>().enabled = true;
+            GetComponent<AIDestinationSetter>().EnableMovement();
         }
     }
 
@@ -50,7 +52,7 @@ public class EnemyHealth : MonoBehaviour
 
         // Disable walking and punching when stunned
         GetComponent<EnemyHit>().enabled = false;
-        //GetComponent<AIDestinationSetter>().BroadcastMessage("ToggleMovement");
+        GetComponent<AIDestinationSetter>().DisableMovement();
 
         if (health > 1)
         {
