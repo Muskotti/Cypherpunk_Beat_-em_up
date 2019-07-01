@@ -19,6 +19,7 @@ namespace Pathfinding {
 		IAstarAI ai;
         public bool inPosition = false;
         public bool canMove;
+        public bool stop;
 
         void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -28,6 +29,7 @@ namespace Pathfinding {
 			// scripts as well. So it makes sense that it is up to date every frame.
 			if (ai != null) ai.onSearchPath += Update;
             canMove = false;
+            stop = false;
         }
 
 		void OnDisable () {
@@ -36,7 +38,7 @@ namespace Pathfinding {
 
         /// <summary>Updates the AI's destination every frame</summary>
         void Update () {
-			if (target != null && ai != null && canMove)
+			if (target != null && ai != null && canMove && !stop)
             {
                 moveTowardsPlayer();
             }
@@ -45,6 +47,18 @@ namespace Pathfinding {
         private void OnTriggerEnter(Collider other)
         {
             canMove = true;
+        }
+
+        public void ToggleMovement()
+        {
+            if (canMove)
+            {
+                stop = true;
+            }
+            else
+            {
+                stop = false; ;
+            }
         }
 
         public void moveTowardsPlayer()
