@@ -15,6 +15,12 @@ public class Movement : MonoBehaviour
     public Collider[] attackHitboxes;
     public bool IsDead;
     public float idleTimer = 0f;
+    public float punchTimer;
+    public float punchTimerFixed;
+    public float walkTimer;
+    public float walkTimerFixed;
+
+    bool interacting;
 
     void Awake()
     {
@@ -24,15 +30,34 @@ public class Movement : MonoBehaviour
     void Update()
     {
         idleTimer += Time.deltaTime;
+        if(punchTimer > 0)
+        {
+            punchTimer -= Time.deltaTime;
+        }
+
+        if(walkTimer > 0)
+        {
+            walkTimer -= Time.deltaTime;
+        }
 
         if (!IsDead)
         {
             // Attack
-            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !interacting)
             {
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
                 idleTimer = 0;
+                punchTimer = punchTimerFixed;
+                walkTimer = walkTimerFixed;
+            }
+
+            if (walkTimer <= 0)
+            {
+                SetMoveStatus(true);
+            } else
+            {
+                SetMoveStatus(false);
             }
 
             if (characterController.isGrounded)
@@ -115,6 +140,13 @@ public class Movement : MonoBehaviour
     public void SetMoveStatus (bool status)
     {
         characterController.enabled = status;
+        if(!status)
+        {
+            interacting = true;
+        } else
+        {
+            interacting = false;
+        }
     }
 
     public void SetDeadStatus(bool status)
