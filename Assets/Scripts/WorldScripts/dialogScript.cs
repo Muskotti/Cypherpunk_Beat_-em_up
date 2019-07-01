@@ -11,8 +11,11 @@ public class dialogScript : MonoBehaviour
 
     public string text;
 
+    bool pressed;
+
     private void Awake()
     {
+        pressed = false;
         player = GameObject.FindGameObjectWithTag("Player");
         dialogScreen = GameObject.FindGameObjectWithTag("DialogScreen");
     }
@@ -37,7 +40,17 @@ public class dialogScript : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown("e"))
         {
-            dialogScreen.SendMessage("SetTalking", text);
+            pressed = !pressed;
         }
+
+        if(pressed)
+        {
+            Interact();
+        }
+    }
+
+    private void Interact()
+    {
+        dialogScreen.SendMessage("SetTalking", text);
     }
 }
