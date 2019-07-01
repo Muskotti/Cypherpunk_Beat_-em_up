@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     public float walkTimer;
     public float walkTimerFixed;
 
-    bool interacting;
+    public bool interacting;
 
     void Awake()
     {
@@ -40,10 +40,10 @@ public class Movement : MonoBehaviour
             walkTimer -= Time.deltaTime;
         }
 
-        if (!IsDead)
+        if (!IsDead && !interacting)
         {
             // Attack
-            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !interacting)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
             {
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
@@ -51,13 +51,13 @@ public class Movement : MonoBehaviour
                 punchTimer = punchTimerFixed;
                 walkTimer = walkTimerFixed;
             }
-
+            
             if (walkTimer <= 0)
             {
-                SetMoveStatus(true);
+                characterController.enabled = true;
             } else
             {
-                SetMoveStatus(false);
+                characterController.enabled = false;
             }
 
             if (characterController.isGrounded)
@@ -140,13 +140,7 @@ public class Movement : MonoBehaviour
     public void SetMoveStatus (bool status)
     {
         characterController.enabled = status;
-        if(!status)
-        {
-            interacting = true;
-        } else
-        {
-            interacting = false;
-        }
+        interacting = !status;
     }
 
     public void SetDeadStatus(bool status)
