@@ -202,7 +202,7 @@ MonoBehaviour:
   punchTimer: 0
   punchTimerFixed: 0.4
   walkTimer: 0
-  walkTimerFixed: 0.4
+  walkTimerFixed: 0.3
   interacting: 0
 --- !u!114 &-6222934569610479902
 MonoBehaviour:
@@ -222,6 +222,8 @@ MonoBehaviour:
   isDead: 0
   playerhit: {fileID: 8226749928745809768, guid: d2f387f7ca33392408744d8e54281682,
     type: 3}
+  stunTimer: 1
+  stunCountdown: 0
   animator: {fileID: 586668547}
 --- !u!114 &-3393254953608166951
 MonoBehaviour:
