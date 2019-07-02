@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f244a5190b18cbe4789d0fc6a10a13b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4cff7fdc1a4715c4ab220689c615b2fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1016,6 +1016,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1641617692671079422, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641617692671079422, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641617692926837627, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 422
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641617692926837627, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -199
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641617692920606006, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 289
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641617692920606006, guid: 14be805bda61234489230f3e6737922d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14be805bda61234489230f3e6737922d, type: 3}
 --- !u!1001 &7854848406691482714
@@ -1093,7 +1123,7 @@ PrefabInstance:
     - target: {fileID: 7854848405729949236, guid: 48f3c0efacb7b774ca7ed03500001219,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 229
+      value: 299
       objectReference: {fileID: 0}
     - target: {fileID: 7854848405729949236, guid: 48f3c0efacb7b774ca7ed03500001219,
         type: 3}
@@ -1135,6 +1165,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949236, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91586
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949236, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.91586
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949236, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.91586
+      objectReference: {fileID: 0}
     - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
         type: 3}
       propertyPath: m_text
@@ -1144,6 +1189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.characterCount
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 5.664275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f3c0efacb7b774ca7ed03500001219, type: 3}
