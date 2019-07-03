@@ -11,7 +11,8 @@ public class EnemyHit : MonoBehaviour
     GameObject player;
     GameObject enemy;
     public bool inPosition;
-    
+
+    public Animator animator;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class EnemyHit : MonoBehaviour
 
     void hitPlayer()
     {
+        animator.SetTrigger("punchTrigger");
         player.GetComponent<PlayerHealt>().TakeDamage(1);
     }
 }
