@@ -193,6 +193,7 @@ MonoBehaviour:
   timeStamp: 0
   nextCooldown: 0
   inPosition: 0
+  animator: {fileID: 1501943782}
 --- !u!114 &8897130281623748992
 MonoBehaviour:
   m_ObjectHideFlags: 0
