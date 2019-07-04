@@ -14,6 +14,7 @@ public class FontScript : MonoBehaviour
     public void SetColorEnter()
     {
         textmeshPro.color = new Color32(200,200,200,255);
+        Debug.Log("asdsad");
     }
 
     public void SetColorExit()

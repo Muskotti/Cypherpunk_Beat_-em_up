@@ -1019,22 +1019,22 @@ PrefabInstance:
     - target: {fileID: 1641617692671079422, guid: 14be805bda61234489230f3e6737922d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 137
+      value: 247
       objectReference: {fileID: 0}
     - target: {fileID: 1641617692671079422, guid: 14be805bda61234489230f3e6737922d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 24
+      value: -38
       objectReference: {fileID: 0}
     - target: {fileID: 1641617692926837627, guid: 14be805bda61234489230f3e6737922d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 422
+      value: 548
       objectReference: {fileID: 0}
     - target: {fileID: 1641617692926837627, guid: 14be805bda61234489230f3e6737922d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -199
+      value: -257
       objectReference: {fileID: 0}
     - target: {fileID: 1641617692920606006, guid: 14be805bda61234489230f3e6737922d,
         type: 3}

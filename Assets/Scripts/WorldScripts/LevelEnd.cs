@@ -9,8 +9,6 @@ public class LevelEnd : MonoBehaviour
 
     bool playerInRange;
 
-    public string text;
-
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
