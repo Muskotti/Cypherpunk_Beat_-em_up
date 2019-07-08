@@ -21,10 +21,12 @@ public class Movement : MonoBehaviour
     public float walkTimerFixed;
 
     public bool interacting;
+    public bool Block;
 
     void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        Block = false;
     }
 
     void Update()
@@ -43,7 +45,7 @@ public class Movement : MonoBehaviour
         if (!IsDead && !interacting)
         {
             // Attack
-            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block)
             {
                 Attack(attackHitboxes[0]);
                 animator.SetTrigger("punchTrigger");
@@ -51,67 +53,80 @@ public class Movement : MonoBehaviour
                 punchTimer = punchTimerFixed;
                 walkTimer = walkTimerFixed;
             }
-            
-            if (walkTimer <= 0)
-            {
-                characterController.enabled = true;
-            } else
-            {
-                characterController.enabled = false;
-            }
 
-            if (characterController.isGrounded)
+            //Block
+            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
             {
-
-                if (Input.GetButton("Jump"))
-                {
-                    moveDirection.y = jumpSpeed;
-                }
-
-                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-                moveDirection = moveDirection * movementSpeed;
-            }
-
-            // Sprite flip
-            if (moveDirection.x > 0)
-            {
-                if (transform.localScale.x < 0)
-                {
-                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-                }
-            }
-            else if (moveDirection.x < 0)
-            {
-                if (transform.localScale.x > 0)
-                {
-                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-                }
-            }
-
-            // Walking animation
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
-            {
+                Block = true;
+                //animator.SetTrigger("punchTrigger");
                 idleTimer = 0;
-                animator.SetBool("isWalking", true);
-            }
-            else
+            } else if(Input.GetKeyUp(KeyCode.Mouse1))
             {
-                animator.SetBool("isWalking", false);
+                Block = false;
             }
 
-            // Trigger idle2 animation
-            if (idleTimer >= 2)
-            {
-                animator.SetBool("idle2", true);
-            }
-            else
-            {
-                animator.SetBool("idle2", false);
-            }
+            if (!Block) {
 
-            //Gravity
-            moveDirection.y -= 10f * Time.deltaTime;
-            characterController.Move(moveDirection * Time.deltaTime);
+                if (walkTimer <= 0)
+                {
+                    characterController.enabled = true;
+                } else
+                {
+                    characterController.enabled = false;
+                }
+
+                if (characterController.isGrounded)
+                {
+
+                    if (Input.GetButton("Jump"))
+                    {
+                        moveDirection.y = jumpSpeed;
+                    }
+
+                    moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+                    moveDirection = moveDirection * movementSpeed;
+                }
+
+                // Sprite flip
+                if (moveDirection.x > 0)
+                {
+                    if (transform.localScale.x < 0)
+                    {
+                        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                    }
+                }
+                else if (moveDirection.x < 0)
+                {
+                    if (transform.localScale.x > 0)
+                    {
+                        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                    }
+                }
+
+                // Walking animation
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+                {
+                    idleTimer = 0;
+                    animator.SetBool("isWalking", true);
+                }
+                else
+                {
+                    animator.SetBool("isWalking", false);
+                }
+
+                // Trigger idle2 animation
+                if (idleTimer >= 2)
+                {
+                    animator.SetBool("idle2", true);
+                }
+                else
+                {
+                    animator.SetBool("idle2", false);
+                }
+                //Gravity
+                moveDirection.y -= 10f * Time.deltaTime;
+                characterController.Move(moveDirection * Time.deltaTime);
+            }
         }
     }
 
