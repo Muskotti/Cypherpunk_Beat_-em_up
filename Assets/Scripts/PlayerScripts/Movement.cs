@@ -71,7 +71,7 @@ public class Movement : MonoBehaviour
                 Block = true;
                 //animator.SetTrigger("punchTrigger");
                 idleTimer = 0;
-            } else if(Input.GetKeyUp(KeyCode.Mouse1))
+            } else if(Input.GetKeyUp(KeyCode.Space))
             {
                 Block = false;
             }
