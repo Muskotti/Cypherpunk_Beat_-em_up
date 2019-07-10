@@ -69,11 +69,12 @@ public class Movement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
             {
                 Block = true;
-                //animator.SetTrigger("punchTrigger");
+                animator.SetBool("isBlocking", true);
                 idleTimer = 0;
             } else if(Input.GetKeyUp(KeyCode.Space))
             {
                 Block = false;
+                animator.SetBool("isBlocking", false);
             }
 
             if (!Block) {
