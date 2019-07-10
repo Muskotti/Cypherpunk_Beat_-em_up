@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
 
     public bool interacting;
     public bool Block;
+    public bool HeavyPunch;
 
     void Awake()
     {
@@ -54,8 +55,18 @@ public class Movement : MonoBehaviour
                 walkTimer = walkTimerFixed;
             }
 
+            // Heavy Attack
+            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block && HeavyPunch)
+            {
+                Attack(attackHitboxes[0]);
+                animator.SetTrigger("punchTrigger");
+                idleTimer = 0;
+                punchTimer = punchTimerFixed;
+                walkTimer = walkTimerFixed;
+            }
+
             //Block
-            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
+            if (Input.GetKeyDown(KeyCode.Space) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0)
             {
                 Block = true;
                 //animator.SetTrigger("punchTrigger");
@@ -161,5 +172,10 @@ public class Movement : MonoBehaviour
     public void SetDeadStatus(bool status)
     {
         IsDead = status;
+    }
+
+    public void UpgradePunch(bool status)
+    {
+        HeavyPunch = status;
     }
 }
