@@ -89819,16 +89819,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4740636081429914719, guid: 45e1346211026744e897789dfa75feb9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 586668546}
     - target: {fileID: 5827278749586234363, guid: 45e1346211026744e897789dfa75feb9,
         type: 3}
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4740636081429914719, guid: 45e1346211026744e897789dfa75feb9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 586668546}
     - target: {fileID: 5827278749586234362, guid: 45e1346211026744e897789dfa75feb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -89968,11 +89968,6 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 103135313}
-    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
-        type: 3}
-      propertyPath: stunTimer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 319917082, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}
       propertyPath: pauseUI
       value: 

@@ -205,6 +205,8 @@ MonoBehaviour:
   walkTimer: 0
   walkTimerFixed: 0.3
   interacting: 0
+  Block: 0
+  HeavyPunch: 0
 --- !u!114 &-6222934569610479902
 MonoBehaviour:
   m_ObjectHideFlags: 0
