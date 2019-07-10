@@ -90237,6 +90237,11 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 103135313}
+    - target: {fileID: -6222934569610479902, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: stunTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 319917082, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}
       propertyPath: pauseUI
       value: 

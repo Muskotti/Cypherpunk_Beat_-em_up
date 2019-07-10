@@ -62,7 +62,6 @@ public class Movement : MonoBehaviour
 
             if (characterController.isGrounded)
             {
-
                 if (Input.GetButton("Jump"))
                 {
                     moveDirection.y = jumpSpeed;
