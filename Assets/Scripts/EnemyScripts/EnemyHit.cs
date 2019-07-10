@@ -36,5 +36,26 @@ public class EnemyHit : MonoBehaviour
     {
         animator.SetTrigger("punchTrigger");
         player.GetComponent<PlayerHealt>().TakeDamage(1);
+
+        if (gameObject.transform.parent.gameObject.name == "Soldiers")
+        {
+            player.GetComponent<PlayerHealt>().stunTimer = 0.5f;
+            player.GetComponent<PlayerHealt>().stunCountdown = 0.5f;
+
+            // Knockback player to direction the enemy is punching from
+            if (gameObject.transform.localScale.x < 0)
+            {
+                player.GetComponent<PlayerHealt>().AddImpact(new Vector3(-3, -1, 0), 50);
+            }
+            else
+            {
+                player.GetComponent<PlayerHealt>().AddImpact(new Vector3(3, -1, 0), 50);
+            }
+        }
+        else
+        {
+            player.GetComponent<PlayerHealt>().stunTimer = 1;
+            player.GetComponent<PlayerHealt>().stunCountdown = 1;
+        }
     }
 }
