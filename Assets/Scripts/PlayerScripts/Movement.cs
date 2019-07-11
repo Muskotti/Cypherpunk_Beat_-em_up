@@ -127,7 +127,7 @@ public class Movement : MonoBehaviour
                 }
 
                 // Trigger idle2 animation
-                if (idleTimer >= 2)
+                if (idleTimer >= 5)
                 {
                     animator.SetBool("idle2", true);
                 }
@@ -178,5 +178,8 @@ public class Movement : MonoBehaviour
     public void UpgradePunch(bool status)
     {
         HeavyPunch = status;
+
+        // Changes Player sprite to have BFF
+        animator.SetTrigger("fistSpriteTrigger");
     }
 }
