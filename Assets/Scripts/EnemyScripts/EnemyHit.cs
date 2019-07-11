@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyHit : MonoBehaviour
 {
@@ -29,6 +30,15 @@ public class EnemyHit : MonoBehaviour
         {
             hitPlayer();
             nextCooldown = Time.time + hitCooldown;
+        }
+
+        // Toggle walk animation if enemy is not in position
+        if (!inPosition && GetComponent<AIDestinationSetter>().canMove)
+        {
+            animator.SetBool("isWalking", true);
+        } else
+        {
+            animator.SetBool("isWalking", false);
         }
     }
 
