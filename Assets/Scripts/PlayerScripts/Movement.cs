@@ -178,5 +178,8 @@ public class Movement : MonoBehaviour
     public void UpgradePunch(bool status)
     {
         HeavyPunch = status;
+
+        // Changes Player sprite to have BFF
+        animator.SetTrigger("fistSpriteTrigger");
     }
 }
