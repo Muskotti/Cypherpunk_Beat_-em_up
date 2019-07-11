@@ -89824,11 +89824,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4740636081429914719, guid: 45e1346211026744e897789dfa75feb9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 586668546}
     - target: {fileID: 5827278749586234362, guid: 45e1346211026744e897789dfa75feb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -89894,6 +89889,11 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 448424381}
+    - target: {fileID: 4740636081429914719, guid: 45e1346211026744e897789dfa75feb9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 586668546}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e1346211026744e897789dfa75feb9, type: 3}
 --- !u!1001 &7808081647872301588
@@ -90273,6 +90273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968874930448949583, guid: d74a670a20b934445ac82a24c230833f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d74a670a20b934445ac82a24c230833f, type: 3}
