@@ -7,6 +7,8 @@ public class NextLevelScript : MonoBehaviour
 {
     GameObject player;
 
+    public GameObject E;
+
     bool playerInRange;
 
     private void Awake()
@@ -19,6 +21,7 @@ public class NextLevelScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = true;
+            E.SetActive(true);
         }
     }
 
@@ -27,6 +30,7 @@ public class NextLevelScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = false;
+            E.SetActive(false);
         }
     }
 

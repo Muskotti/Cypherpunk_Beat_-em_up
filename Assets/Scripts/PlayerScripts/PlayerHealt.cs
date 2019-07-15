@@ -129,6 +129,7 @@ public class PlayerHealt : MonoBehaviour
         animator.SetBool("idle2", false);
         animator.SetBool("isDead", true);
 
+        PlayerLieDown();
         transform.localPosition = new Vector3(transform.localPosition.x - 1, transform.localPosition.y - 0.3f, transform.localPosition.z - 0.04f);
     }
 

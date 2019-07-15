@@ -6,6 +6,7 @@ public class dialogScript : MonoBehaviour
 {
     GameObject player;
     GameObject dialogScreen;
+    public GameObject E;
 
     bool playerInRange;
 
@@ -25,6 +26,7 @@ public class dialogScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = true;
+            E.SetActive(true);
         }
     }
 
@@ -33,6 +35,7 @@ public class dialogScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = false;
+            E.SetActive(false);
         }
     }
 

@@ -6,10 +6,14 @@ public class UpgradeMenuScript : MonoBehaviour
 {
     GameObject player;
     public GameObject upgradeMenuUI;
+    public GameObject E;
 
     bool playerInRange;
     bool active;
     bool pressed;
+
+    float speed = 0.1f;
+    float height = 0.1f;
 
     private void Awake()
     {
@@ -23,6 +27,7 @@ public class UpgradeMenuScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = true;
+            E.SetActive(true);
         }
     }
 
@@ -31,6 +36,7 @@ public class UpgradeMenuScript : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = false;
+            E.SetActive(false);
         }
     }
 
