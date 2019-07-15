@@ -109,6 +109,7 @@ public class PlayerHealt : MonoBehaviour
     public void AddImpact(Vector3 dir, float force)
     {
         knockedBack = true;
+
         PlayerLieDown();
 
         dir.Normalize();
