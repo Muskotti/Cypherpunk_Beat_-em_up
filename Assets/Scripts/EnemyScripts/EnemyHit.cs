@@ -52,15 +52,19 @@ public class EnemyHit : MonoBehaviour
             player.GetComponent<PlayerHealt>().stunTimer = 0.5f;
             player.GetComponent<PlayerHealt>().stunCountdown = 0.5f;
 
-            // Knockback player to direction the enemy is punching from
-            if (gameObject.transform.localScale.x < 0)
+            // Knockback player to direction the enemy is punching from (if player is not blocking)
+            if (!player.GetComponent<Movement>().Block)
             {
-                player.GetComponent<PlayerHealt>().AddImpact(new Vector3(-3, -1, 0), 50);
+                if (gameObject.transform.localScale.x < 0)
+                {
+                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(-3, -1, 0), 50);
+                }
+                else
+                {
+                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(3, -1, 0), 50);
+                }
             }
-            else
-            {
-                player.GetComponent<PlayerHealt>().AddImpact(new Vector3(3, -1, 0), 50);
-            }
+            
         }
         else
         {
