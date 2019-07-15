@@ -662,15 +662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8251334225447426305, guid: c570f5c73a07f7c4da27ba253ae0df0c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.38
+      value: 8.24
       objectReference: {fileID: 0}
     - target: {fileID: 8251334225447426306, guid: c570f5c73a07f7c4da27ba253ae0df0c,
         type: 3}
@@ -90078,7 +90073,7 @@ PrefabInstance:
     - target: {fileID: 8311512813623309656, guid: 9faddcea4da094a46b8693e377926572,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.35
+      value: 14.46
       objectReference: {fileID: 0}
     - target: {fileID: 8311512813623309656, guid: 9faddcea4da094a46b8693e377926572,
         type: 3}
@@ -90125,6 +90120,11 @@ PrefabInstance:
       propertyPath: upgradeMenuUI
       value: 
       objectReference: {fileID: 1018798954}
+    - target: {fileID: 1084271788682686150, guid: 9faddcea4da094a46b8693e377926572,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9faddcea4da094a46b8693e377926572, type: 3}
 --- !u!1001 &8897130281785641998
