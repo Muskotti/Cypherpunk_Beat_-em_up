@@ -129,18 +129,18 @@ TextureImporter:
       name: CITYFLOORTILESET_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 150
+        x: 1
+        y: 157
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a3f162d0b32a446a2026ae452dbc42
+      spriteID: 7f8d8f2a1a0cfb044b6e8e6e14e80e82
       internalID: -6627876211262159455
       vertices: []
       indices: 
@@ -150,18 +150,18 @@ TextureImporter:
       name: CITYFLOORTILESET_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 150
+        x: 53
+        y: 157
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49021f24caf49ea4cb69b2c0c319ba3a
+      spriteID: a75168799b1441140925896223204a8f
       internalID: 9152458695961291022
       vertices: []
       indices: 
@@ -171,18 +171,18 @@ TextureImporter:
       name: CITYFLOORTILESET_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 150
+        x: 105
+        y: 157
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a7d6101e715014288ca79a9f2cda3a
+      spriteID: 7baa2e56875fe024ba091abd85e0090d
       internalID: 3112386266642807173
       vertices: []
       indices: 
@@ -192,18 +192,18 @@ TextureImporter:
       name: CITYFLOORTILESET_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 150
+        x: 157
+        y: 157
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884ca3eddeead454bad689253faae2e1
+      spriteID: 7a43ddfb1fd109a4898b466148602093
       internalID: -8523184803410586134
       vertices: []
       indices: 
@@ -213,18 +213,18 @@ TextureImporter:
       name: CITYFLOORTILESET_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 100
+        x: 1
+        y: 105
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca75abc5c86fa234c88dbfad56dace20
+      spriteID: 7caa2fced6c5d8640a018b848ef08d5e
       internalID: 9020047362118883034
       vertices: []
       indices: 
@@ -234,18 +234,18 @@ TextureImporter:
       name: CITYFLOORTILESET_5
       rect:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 53
+        y: 105
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14154791602c91145b684c8b918df105
+      spriteID: 857b8a7ca7c94824d8e84b9b01c2fffa
       internalID: -7331972849915804141
       vertices: []
       indices: 
@@ -255,18 +255,18 @@ TextureImporter:
       name: CITYFLOORTILESET_6
       rect:
         serializedVersion: 2
-        x: 100
-        y: 100
+        x: 105
+        y: 105
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 822d7db6bae62e848becad864d0c20f4
+      spriteID: 8f05ce8c3eb65a64a96d07496c9619f3
       internalID: 3918400094242533936
       vertices: []
       indices: 
@@ -276,18 +276,18 @@ TextureImporter:
       name: CITYFLOORTILESET_7
       rect:
         serializedVersion: 2
-        x: 150
-        y: 100
+        x: 157
+        y: 105
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca2095a49a44fe4388d8bffbe953015
+      spriteID: 9cb0008cdc40cab49a50d5ee59cdafb6
       internalID: -8382473187623087782
       vertices: []
       indices: 
@@ -297,18 +297,18 @@ TextureImporter:
       name: CITYFLOORTILESET_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 50
+        x: 1
+        y: 53
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f76989ebe9d4b44ba697c59ef860ef
+      spriteID: c848e39780745a342930aad63b1e8d5a
       internalID: 7541118452056646973
       vertices: []
       indices: 
@@ -318,18 +318,18 @@ TextureImporter:
       name: CITYFLOORTILESET_9
       rect:
         serializedVersion: 2
-        x: 50
-        y: 50
+        x: 53
+        y: 53
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d0fae3e408a9df43866885babc06759
+      spriteID: 1e05115b19892ef4390bde219094b1df
       internalID: -2055969333248843661
       vertices: []
       indices: 
@@ -339,18 +339,18 @@ TextureImporter:
       name: CITYFLOORTILESET_10
       rect:
         serializedVersion: 2
-        x: 100
-        y: 50
+        x: 105
+        y: 53
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f515e8adbe713e4ebe7603ffe07c83d
+      spriteID: 2f60de0e743e2d74ca5060ffeb7f284a
       internalID: 83732537086207040
       vertices: []
       indices: 
@@ -360,18 +360,18 @@ TextureImporter:
       name: CITYFLOORTILESET_11
       rect:
         serializedVersion: 2
-        x: 150
-        y: 50
+        x: 157
+        y: 53
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0dea5cbcf93bf4a933dfee3b5c626a
+      spriteID: c872f1823c9c50d4cae87b989e574f7d
       internalID: -6602838995042586469
       vertices: []
       indices: 
@@ -381,18 +381,18 @@ TextureImporter:
       name: CITYFLOORTILESET_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1d31fd9bc411ce48b2cae009c57a5fe
+      spriteID: 2eafb48b90bc2334eb5b5dfcef0f1907
       internalID: -1724400026043412028
       vertices: []
       indices: 
@@ -402,18 +402,18 @@ TextureImporter:
       name: CITYFLOORTILESET_13
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
+        x: 53
+        y: 1
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e86870607f53a0441a5562bcea146783
+      spriteID: f8c7715dd36885c439d6e8ed07d64e2b
       internalID: 8187916570547189165
       vertices: []
       indices: 
