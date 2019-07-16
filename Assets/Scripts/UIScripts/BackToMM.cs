@@ -7,6 +7,7 @@ public class BackToMM : MonoBehaviour
 {
     public void MainMenu()
     {
+        Debug.Log("asdasd");
         SceneManager.LoadScene("MainMenu");
     }
 }
