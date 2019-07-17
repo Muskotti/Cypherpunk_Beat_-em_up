@@ -45,6 +45,12 @@ public class EnemyHealth : MonoBehaviour
 
     private void TakeDamage(float damage)
     {
+        // Activate enemy pathfinding, if not yet active
+        if (GetComponent<AIDestinationSetter>().canMove == false)
+        {
+            GetComponent<AIDestinationSetter>().canMove = true;
+        }
+
         // Stun code
         animator.SetBool("isStunned", true);
         isStunned = true;
