@@ -992,46 +992,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 987799637636135713, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 987799637636135714, guid: c25e219d296a5a5469e027f863f72a30,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 586668554}
-    - target: {fileID: 987799637636135718, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: stunTimer
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 987799637636135715, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: slowdownDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3892589408708624257, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 54.06178
-      objectReference: {fileID: 0}
-    - target: {fileID: 3892589408708624257, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 3.9005094
-      objectReference: {fileID: 0}
-    - target: {fileID: 3892589408708624257, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 9.082941
-      objectReference: {fileID: 0}
-    - target: {fileID: 3892589408708624257, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 52.860943
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c25e219d296a5a5469e027f863f72a30, type: 3}
 --- !u!4 &745807113 stripped
@@ -2322,7 +2287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIezZO2odWAIAAP8EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2zAM/BUPz21GcvzsrVUcp4c8Jm4nF11oErI4pkgNH7GdjP+9ICVbqnKyjMUCiwWkTyKUrYE5bdZG8EfNgfwYkfBMvo068AGOdKfVRnzAJedNcFeGJBpzXqkTGuNpoFldgTOC/VQ7GZITDHolCm2qFd9Bpq2zGC6otICQ0S6wFYY+R+TYEk7t70f4HZ3xiYFyYLqs6fJmOZvPx4Pkxc00mU/SReR4xSStauBBe0cdTy6sdBrzFI7VpoQRmJZS2FYTcac6zpzR2nqcCBO4oDhjVJPchFoliF3p8O9tn/5cFBZcK87Q050waFZTl/zSjYMVtftG2juVPnSapuOoqin6+AWfz+YRL4yuHi6N0yQ0caVg+1d6YtS6nsf98F2nPY0WHajc062EtxLUk14b7RVH0BkfqN7C+K5X6jpcVgLbd3mN2EHQ11+3mnZbPcfxj5kU1TZamTaBjdTR8mXggMHl/EbB8UpsWwmjQcRfC3/orn9OLXAvjHUItQ1VULfV3oRUsoqehWG8y7RREMOt5hoUle70gmXccIcDrNd2gNzT8OK0zVvs8j4MKDHc5SfJAHrRh+uybKkPj2DLZ++kUNCJDsAT+pRppZoT63tyoW28KSjr0XZe8P9vi6S3M5ZMbhfFclws0oR93044AIdkMp4spsmMknh7QuGcVL40Qlt7cGuqK67wzi7fk9Ha0DqeOzf0sBYfle5ZLlShN8wAqOemwlU4GGyCLyZfcYEGbcA5oeK+yWdOpGZ74Pm1UB4nXR2doXlXJSe1eNcuRHKSxa9ITs7k/A9QSwMEFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSs9BRUEovSizIKAYKGII4pZkpIHa0kqGxWbKBibFFmqVRmoWhQbJukklKampKqoGJkYmFqYFZolIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAECHs2TtqHVgCAAD/BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAECHs1nAEhGwAAAB3AAAACQAkAAAAAAAAAAAAAAClAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFwDAAAAAA==
+    dataString: UEsDBBQAAAgIAAAQIeyVX0BJVgIAAP8EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMmSmzAQ/RWXzokLGK+5JdjjycFj1zipuXCRpcaoLCRKy3iZ8r9HEtgQ5gTV773u1wt8IiZ0BcRItVKMriUF9GOA/Dv6NmjBFzjjgxQ7doU7551RU3gSDpw3bJh08djLtCzBKEZ+igP35MgFrWC5VOWSHiCV2mgXzjHX4CAljVcLF/ocoHMjuDTPq38Obu6NgDCgWtZ4PpxPptOkR54Nx9F0FM+CxgrCcVkB9d5baTK6q+Jx4AnXVkPxLRDJOdONJ2QuVeg5xZW2riNHoAy7HoObaOhzFcAOhfGpu/JNnmswjTmFLwum3LDqvOiXrCdYYn2srX1gbn2lcZwEV3XS9Rd8OpkGPFeyfLkXjiNfxBSMHN/whWBtOjPuhhet9ziM6IT5Ee85vBcgXuVKSSuoA42yXmo1JItOqkdzaQHk2PJqs72grb5uNW63egvtn1POyn0YZVwHdlyGkc+9BpRbzm9nOFyJbjK5qDfxV8MffOieUwM8M6WNg5qCwrvbS6s8FS3DzHwz1qRSCQjhxnMFAnNz2bo0pr/DHtYp20Oesf9wmuINdv8eepIQbvlR1IO28vRYli7kaQ262FjDmYDWtAde3ZxSKUR9Yt2Z3GU7q3JMOrKDZfT/20Lx04REo6dZPk/yWRyR7/sRBaAQjZLRbBxNMAq3x4TrE/NtbbQZj9uaaJMLd2f3/8lgpXAVzp0qfFqxayk7I2cilzuiAMSmzvAwDsoVcR8mXVLmBrQDY5gI+0afGeKSHIFmj0RZ6HR5NgpnbZYMVexDGh/JUBr+Ihm6ods/UEsDBBQAAAgIAAAQIezWcASEbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJKhsVmygYmxRZqlUZqFoUGybpJJSmpqSqqBiZGJhamBWaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7JVfQElWAgAA/wQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJAAAAAAAAAAAAAAAowIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABaAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -93171,6 +93136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 8252655245860131575, guid: 804800ddb31036b4d8be00cd25e990fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8252655245860131572, guid: 804800ddb31036b4d8be00cd25e990fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -93451,6 +93421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CarRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8252655245860131575, guid: 5de00f10f31bb674ab556ebb4f9e06cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8252655245860131572, guid: 5de00f10f31bb674ab556ebb4f9e06cb,
         type: 3}
@@ -93962,26 +93937,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 987799637636135713, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 987799637636135714, guid: c25e219d296a5a5469e027f863f72a30,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 586668554}
-    - target: {fileID: 987799637636135718, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: stunTimer
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 987799637636135715, guid: c25e219d296a5a5469e027f863f72a30,
-        type: 3}
-      propertyPath: slowdownDistance
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c25e219d296a5a5469e027f863f72a30, type: 3}
 --- !u!1001 &3021582411538955132
