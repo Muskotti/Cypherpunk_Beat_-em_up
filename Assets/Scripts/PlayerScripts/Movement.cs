@@ -23,11 +23,13 @@ public class Movement : MonoBehaviour
     public bool interacting;
     public bool Block;
     public bool HeavyPunch;
+    public bool HasKeyCard;
 
     void Awake()
     {
         characterController = GetComponent<CharacterController>();
         Block = false;
+        HasKeyCard = false;
     }
 
     void Update()
@@ -181,5 +183,20 @@ public class Movement : MonoBehaviour
 
         // Changes Player sprite to have BFF
         animator.SetTrigger("fistSpriteTrigger");
+    }
+
+    public void PickUp(string str)
+    {
+        if(str.Equals("KeyCard"))
+        {
+            HasKeyCard = true;
+        } else if(str.Equals("Credit"))
+        {
+            // Make Credit pickup
+        } else
+        {
+            Debug.Log(str);
+        }
+
     }
 }
