@@ -202,4 +202,9 @@ public class Movement : MonoBehaviour
         }
 
     }
+
+    public int GetCredit()
+    {
+        return Credit;
+    }
 }

@@ -7,6 +7,6 @@ public class RestartLevelScript : MonoBehaviour
 {
     public void RestartLevel()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
