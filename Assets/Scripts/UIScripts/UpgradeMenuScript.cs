@@ -12,9 +12,6 @@ public class UpgradeMenuScript : MonoBehaviour
     bool active;
     bool pressed;
 
-    float speed = 0.1f;
-    float height = 0.1f;
-
     private void Awake()
     {
         active = false;
