@@ -161,7 +161,7 @@ MonoBehaviour:
   repathRate: 0.01
   canSearch: 1
   canMove: 1
-  maxSpeed: 7
+  maxSpeed: 10
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -170,15 +170,15 @@ MonoBehaviour:
   orientation: 0
   enableRotation: 0
   targetCompatibility: {fileID: 0}
-  maxAcceleration: 5
+  maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 4
-  pickNextWaypointDist: 1
+  slowdownDistance: 0.5
+  pickNextWaypointDist: 0.1
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
-  constrainInsideGraph: 0
+  constrainInsideGraph: 1
 --- !u!114 &987799637636135714
 MonoBehaviour:
   m_ObjectHideFlags: 0
