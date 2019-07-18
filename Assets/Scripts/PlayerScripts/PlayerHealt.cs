@@ -26,12 +26,15 @@ public class PlayerHealt : MonoBehaviour
     public Animator animator;
     CharacterController cc;
 
+    public SpriteRenderer GlowPart;
+
     // Knockback
     float mass = 3.0F; // defines the character mass
     Vector3 impact = Vector3.zero;
 
     private void Awake()
     {
+        GlowPart.color = new Color(0, 255, 0);
         currentHealth = startHealt;
         stunCountdown = stunTimer;
         isStunned = false;
@@ -95,6 +98,34 @@ public class PlayerHealt : MonoBehaviour
             animator.SetBool("isStunned", true);
             isStunned = true;
             stunCountdown = stunTimer;
+
+            switch(currentHealth)
+            {
+                case 4:
+                    Debug.Log("Case 4");
+                    GlowPart.color = new Color(0.5f, 1f, 0, 1f);
+                    break;
+                case 3:
+                    Debug.Log("Case 3");
+                    GlowPart.color = new Color(1f, 1f, 0, 1f);
+                    break;
+                case 2:
+                    Debug.Log("Case 2");
+                    GlowPart.color = new Color(1f, 0.5f, 0, 1f);
+                    break;
+                case 1:
+                    Debug.Log("Case 1");
+                    GlowPart.color = new Color(1f, 0, 0, 1f);
+                    break;
+                case 0:
+                    Debug.Log("Case 0");
+                    GlowPart.color = new Color(1f, 0, 0, 1f);
+                    break;
+                default:
+                    Debug.Log("Case Default");
+                    GlowPart.color = new Color(0, 1f, 0, 1f);
+                    break;
+            }
 
             // Disable walking and punching when stunned
             GetComponent<Movement>().enabled = false;
