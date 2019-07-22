@@ -7,15 +7,17 @@ public class MainMenuScript : MonoBehaviour
 {
     GameObject soundManager;
 
-    void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(2.0f);
+
         soundManager = GameObject.Find("SoundManager");
         soundManager.GetComponent<SoundManager>().menuThemePlay();
     }
 
     public void playGame()
     {
-        SceneManager.LoadScene("HospitalScene");
+        SceneManager.LoadScene("LoadingScene");
     }
     
     public void quitGame()
