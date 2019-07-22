@@ -25,11 +25,14 @@ public class Movement : MonoBehaviour
     public bool HeavyPunch;
     public bool HasKeyCard;
 
+    public int Credit;
+
     void Awake()
     {
         characterController = GetComponent<CharacterController>();
         Block = false;
         HasKeyCard = false;
+        Credit = 0;
     }
 
     void Update()
@@ -192,11 +195,16 @@ public class Movement : MonoBehaviour
             HasKeyCard = true;
         } else if(str.Equals("Credit"))
         {
-            // Make Credit pickup
+            Credit++;
         } else
         {
             Debug.Log(str);
         }
 
+    }
+
+    public int GetCredit()
+    {
+        return Credit;
     }
 }

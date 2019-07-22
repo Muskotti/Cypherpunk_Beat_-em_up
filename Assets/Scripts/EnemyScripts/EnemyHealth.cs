@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject enemyhit;
     public GameObject enemydead;
+
+    public GameObject Credit;
 
     void Start()
     {
@@ -77,7 +80,14 @@ public class EnemyHealth : MonoBehaviour
         health -= damage;
 
         if (health <= 0) {
+            SpawnCredit();
             Destroy(this.gameObject);
         }
+    }
+
+    private void SpawnCredit()
+    {
+        GameObject newBox = Instantiate(Credit);
+        newBox.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
     }
 }

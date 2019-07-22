@@ -10,8 +10,7 @@ public class PlayerHealt : MonoBehaviour
     bool knockedBack;
 
     public GameObject deathScreen;
-
-    bool damage;
+    
     public bool isDead;
 
     GameObject soundManager;
@@ -86,7 +85,6 @@ public class PlayerHealt : MonoBehaviour
         if (!gameObject.GetComponent<Movement>().Block) {
             Debug.Log(gameObject.GetComponent<Movement>().Block);
             soundManager.GetComponent<SoundManager>().takeDamagePlay();
-            damage = true;
             currentHealth -= amount;
             GameObject hitmarker = Instantiate(playerhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
             Destroy(hitmarker, 0.2f);
