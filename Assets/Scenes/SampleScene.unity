@@ -99696,21 +99696,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8897130281623748999, guid: 32907d0cbd30b6248a7419817e1becfa,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 8897130281623748996, guid: 32907d0cbd30b6248a7419817e1becfa,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 586668554}
-    - target: {fileID: 8897130281623748992, guid: 32907d0cbd30b6248a7419817e1becfa,
-        type: 3}
-      propertyPath: stunTimer
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
 --- !u!4 &8897130282215068080 stripped
