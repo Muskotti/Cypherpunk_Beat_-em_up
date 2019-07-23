@@ -21,6 +21,14 @@ namespace Pathfinding {
         public bool canMove;
         public bool stop;
 
+        // TESTII
+        Vector3 playerUp;
+        Vector3 playerDown;
+        Vector3 playerLeft;
+        Vector3 playerRight;
+
+        public Animator animator;
+
         void OnEnable () {
 			ai = GetComponent<IAstarAI>();
 			// Update the destination right before searching for a path as well.
@@ -60,14 +68,48 @@ namespace Pathfinding {
 
         public void moveTowardsPlayer()
         {
+            // TESTII
+            playerUp = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z + 0.7f);
+            playerDown = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z - 0.7f);
+            playerLeft = new Vector3(target.transform.position.x - 0.7f, target.transform.position.y, target.transform.position.z);
+            playerRight = new Vector3(target.transform.position.x + 0.7f, target.transform.position.y, target.transform.position.z);
+
+            // Pick closest of the four positions on player (up, down, left, right)
+            Vector3[] positions = new Vector3[4];
+            positions[0] = playerUp;
+            positions[1] = playerDown;
+            positions[2] = playerLeft;
+            positions[3] = playerRight;
+
+            Vector3 closestPosition = positions[0];
+            for (int i=1; i<positions.Length; i++)
+            {
+                if (Vector3.Distance(transform.position, positions[i]) < Vector3.Distance(transform.position, closestPosition))
+                {
+                    closestPosition = positions[i];
+                }
+            }
+
+            // Set target to closest position
+            ai.destination = closestPosition;
+
+            // Set inPosition to true, if reached destination
+            if (ai.reachedEndOfPath && Vector3.Distance(transform.position, target.position) < 1f)
+            {
+                inPosition = true;
+            }
+            else
+            {
+                inPosition = false;
+            }
+
+            // Set correct sprite and scale, based on what direction enemy is moving towards
             if (target.transform.position.x < this.transform.position.x)
             {
                 if (transform.localScale.x > 0)
                 {
                     transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
                 }
-                inPosition = false;
-                ai.destination = new Vector3(target.transform.position.x + 0.7f, target.transform.position.y, target.transform.position.z);
             }
             else if (target.transform.position.x > this.transform.position.x)
             {
@@ -75,13 +117,25 @@ namespace Pathfinding {
                 {
                     transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
                 }
-                inPosition = false;
-                ai.destination = new Vector3(target.transform.position.x - 0.7f, target.transform.position.y, target.transform.position.z);
             }
 
-            if (ai.reachedEndOfPath && Vector3.Distance(transform.position, target.position) < 1f)
+            if (ai.destination == playerUp)
             {
-                inPosition = true;
+                animator.SetBool("lookingSide", false);
+                animator.SetBool("lookingUp", false);
+                animator.SetBool("lookingDown", true);
+            }
+            else if (ai.destination == playerDown)
+            {
+                animator.SetBool("lookingSide", false);
+                animator.SetBool("lookingUp", true);
+                animator.SetBool("lookingDown", false);
+            }
+            else
+            {
+                animator.SetBool("lookingSide", true);
+                animator.SetBool("lookingUp", false);
+                animator.SetBool("lookingDown", false);
             }
         }
     }
