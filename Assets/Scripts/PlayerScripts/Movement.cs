@@ -134,6 +134,14 @@ public class Movement : MonoBehaviour
                         animator.SetBool("lookingSide", true);
                         animator.SetBool("lookingUp", false);
                         animator.SetBool("lookingDown", false);
+                        if(Input.GetKey(KeyCode.A))
+                        {
+                            attackHitboxes[0].transform.position = new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
+                        } else if (Input.GetKey(KeyCode.D))
+                        {
+                            attackHitboxes[0].transform.position = new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z);
+                        }
+                        attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
                     }
                     // UP
                     else if (Input.GetKey(KeyCode.W))
@@ -141,6 +149,8 @@ public class Movement : MonoBehaviour
                         animator.SetBool("lookingSide", false);
                         animator.SetBool("lookingUp", true);
                         animator.SetBool("lookingDown", false);
+                        attackHitboxes[0].transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.5f);
+                        attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 90, 0);
                     }
                     // DOWN
                     else if (Input.GetKey(KeyCode.S))
@@ -148,6 +158,8 @@ public class Movement : MonoBehaviour
                         animator.SetBool("lookingSide", false);
                         animator.SetBool("lookingUp", false);
                         animator.SetBool("lookingDown", true);
+                        attackHitboxes[0].transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.5f);
+                        attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 90, 0);
                     }
                 }
                 else

@@ -324,6 +324,7 @@ MonoBehaviour:
   stunTimer: 1
   stunCountdown: 0
   animator: {fileID: 586668547}
+  GlowPart: {fileID: 1192600663919255772}
 --- !u!114 &-3393254953608166951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +440,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e09a36f98869c9343bcfec97ce7c0660, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -476,7 +477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6550803142822742265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36, y: -0.00000011921, z: 9e-15}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5248183167454704198}
