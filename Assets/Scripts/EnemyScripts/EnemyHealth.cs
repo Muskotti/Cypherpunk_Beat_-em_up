@@ -19,12 +19,19 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject Credit;
 
+    CharacterController cc;
+
+    // Knockback
+    float mass = 3.0F; // defines the character mass
+    Vector3 impact = Vector3.zero;
+
     void Start()
     {
         health = 3;
         stunCountdown = stunTimer;
         isStunned = false;
         soundManager = GameObject.Find("SoundManager");
+        cc = GetComponent<CharacterController>();
     }
 
     private void Update()
@@ -44,6 +51,20 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<EnemyHit>().enabled = true;
             GetComponent<AIDestinationSetter>().EnableMovement();
         }
+
+        // Knockback
+        if (impact.magnitude > 0.2F && GetComponent<AIDestinationSetter>().canMove)
+        {
+            cc.Move(impact * Time.deltaTime);
+            // consumes the impact energy each cycle:
+            impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+        }
+        //Gravity
+        if (GetComponent<AIDestinationSetter>().canMove)
+        {
+            impact.y -= 20f * Time.deltaTime;
+            cc.Move(impact * Time.deltaTime);
+        }
     }
 
     private void TakeDamage(float damage)
@@ -53,6 +74,8 @@ public class EnemyHealth : MonoBehaviour
         {
             GetComponent<AIDestinationSetter>().canMove = true;
         }
+
+        GetComponent<AIDestinationSetter>().stop = true;
 
         // Stun code
         animator.SetBool("isStunned", true);
@@ -83,6 +106,23 @@ public class EnemyHealth : MonoBehaviour
             SpawnCredit();
             Destroy(this.gameObject);
         }
+    }
+
+    private void TakeHeavyDamage(float damage)
+    {
+        TakeDamage(damage);
+        AddImpact(new Vector3(0, -1, 0), 60);
+        stunCountdown = 1.5f;
+    }
+
+    public void AddImpact(Vector3 dir, float force)
+    {
+        dir.Normalize();
+        if (dir.y < 0)
+        {
+            dir.y = -dir.y; // reflect down force on the ground
+        }
+        impact += dir.normalized * force / mass;
     }
 
     private void SpawnCredit()

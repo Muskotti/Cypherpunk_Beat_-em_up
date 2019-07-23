@@ -54,7 +54,10 @@ namespace Pathfinding {
 
         private void OnTriggerEnter(Collider other)
         {
-            canMove = true;
+            if (other.name.Equals("Player"))
+            {
+                canMove = true;
+            }
         }
 
         public void EnableMovement()
