@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 16dd23be94aa6bf44b5b2a4a4bf4fc84
+guid: fbb8bfa171284854b8751d607bc2649c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 639180859234214134
-    second: player_front_stand_800px_0
+      213: -4576506012579506602
+    second: player_side_punch_hair_800px_0
   - first:
-      213: -6970757843196121860
-    second: player_front_stand_800px_1
+      213: 4009961089081908842
+    second: player_side_punch_hair_800px_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,12 +90,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_front_stand_800px_0
+      name: player_side_punch_hair_800px_0
       rect:
         serializedVersion: 2
-        x: 200
+        x: 225
         y: 0
-        width: 400
+        width: 325
         height: 800
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -104,19 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aace13d8dd23634c9f62fc02b1c9e16
-      internalID: 639180859234214134
+      spriteID: 9fb2fb60f185ea54b9ddc8e27560a626
+      internalID: -4576506012579506602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_front_stand_800px_1
+      name: player_side_punch_hair_800px_1
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 1025
         y: 0
-        width: 400
+        width: 500
         height: 800
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da52e24ecd3739d4eb704dfdd0faec7c
-      internalID: -6970757843196121860
+      spriteID: b0ce131f8c804a44086381c879cbbe3f
+      internalID: 4009961089081908842
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2f9db272099ce394fbc5f84439fe5736
+    spriteID: 46604a401f04d44488a2ae64530f7bd7
     internalID: 0
     vertices: []
     indices: 

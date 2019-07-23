@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 16dd23be94aa6bf44b5b2a4a4bf4fc84
+guid: 6977f496643073943a38996db1d53547
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 639180859234214134
-    second: player_front_stand_800px_0
+      213: -741466252824574877
+    second: player_front_punch_hair_800px_0
   - first:
-      213: -6970757843196121860
-    second: player_front_stand_800px_1
+      213: 6802673792023639285
+    second: player_front_punch_hair_800px_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,7 +90,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_front_stand_800px_0
+      name: player_front_punch_hair_800px_0
       rect:
         serializedVersion: 2
         x: 200
@@ -104,14 +104,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aace13d8dd23634c9f62fc02b1c9e16
-      internalID: 639180859234214134
+      spriteID: da15ab604efb84a41a6fd36c343e8d46
+      internalID: -741466252824574877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_front_stand_800px_1
+      name: player_front_punch_hair_800px_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da52e24ecd3739d4eb704dfdd0faec7c
-      internalID: -6970757843196121860
+      spriteID: 561ff6b44317c2149857044f5f54872d
+      internalID: 6802673792023639285
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2f9db272099ce394fbc5f84439fe5736
+    spriteID: b343d6561322d3040a27553c07876d9a
     internalID: 0
     vertices: []
     indices: 

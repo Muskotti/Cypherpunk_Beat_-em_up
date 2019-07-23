@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
 
     public int Credit;
 
-    public GameObject Hair_Back_Idle;
+    public GameObject[] Hairs;
     public List<String> AnimationNames;
 
     void Awake()
@@ -46,15 +46,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back"))
-        {
-            Hair_Back_Idle.SetActive(true);
-        }
-        else
-        {
-            Hair_Back_Idle.SetActive(false);
-        }
+        SetHair();
 
             idleTimer += Time.deltaTime;
         if(punchTimer > 0)
@@ -199,6 +191,37 @@ public class Movement : MonoBehaviour
                 characterController.Move(moveDirection * Time.deltaTime);
             }
         }
+    }
+
+    private void SetHair()
+    {
+        int currentHair = 0;
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back"))
+        {
+            currentHair = 0;
+        }
+        else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Side"))
+        {
+            currentHair = 1;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Front"))
+        {
+            currentHair = 2;
+        }
+
+        for (int i = Hairs.Length-1; i >= 0; i--)
+        {
+            Debug.Log(i);
+            if(currentHair == i)
+            {
+                Hairs[i].SetActive(true);
+            } else
+            {
+                Hairs[i].SetActive(false);
+            }
+        }
+        
     }
 
     public void Attack(Collider collider)

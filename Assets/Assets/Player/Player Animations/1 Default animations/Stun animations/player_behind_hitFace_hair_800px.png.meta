@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 16dd23be94aa6bf44b5b2a4a4bf4fc84
+guid: d716df295c82cdd4c89737e749e0d8b9
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 639180859234214134
-    second: player_front_stand_800px_0
-  - first:
-      213: -6970757843196121860
-    second: player_front_stand_800px_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -46,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -88,53 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: player_front_stand_800px_0
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 400
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7aace13d8dd23634c9f62fc02b1c9e16
-      internalID: 639180859234214134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_front_stand_800px_1
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 400
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da52e24ecd3739d4eb704dfdd0faec7c
-      internalID: -6970757843196121860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2f9db272099ce394fbc5f84439fe5736
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
