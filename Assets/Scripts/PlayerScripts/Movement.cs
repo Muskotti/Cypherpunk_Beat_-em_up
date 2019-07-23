@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +28,8 @@ public class Movement : MonoBehaviour
 
     public int Credit;
 
+    public GameObject[] Hairs;
+
     void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -38,7 +41,9 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        idleTimer += Time.deltaTime;
+        SetHair();
+
+            idleTimer += Time.deltaTime;
         if(punchTimer > 0)
         {
             punchTimer -= Time.deltaTime;
@@ -179,6 +184,75 @@ public class Movement : MonoBehaviour
                 //Gravity
                 moveDirection.y -= 10f * Time.deltaTime;
                 characterController.Move(moveDirection * Time.deltaTime);
+            }
+        }
+    }
+
+    private void SetHair()
+    {
+        int currentHair = 0;
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back"))
+        {
+            currentHair = 0;
+        }
+        else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Side"))
+        {
+            currentHair = 1;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Front"))
+        {
+            currentHair = 2;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_side"))
+        {
+            currentHair = 3;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_back"))
+        {
+            currentHair = 4;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_front"))
+        {
+            currentHair = 5;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_front"))
+        {
+            currentHair = 6;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_side"))
+        {
+            currentHair = 7;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_back"))
+        {
+            currentHair = 8;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_side"))
+        {
+            currentHair = 9;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_front"))
+        {
+            currentHair = 10;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_back"))
+        {
+            currentHair = 11;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player2_idle"))
+        {
+            currentHair = 12;
+        }
+
+        for (int i = Hairs.Length-1; i >= 0; i--)
+        {
+            if(currentHair == i)
+            {
+                Hairs[i].SetActive(true);
+            } else
+            {
+                Hairs[i].SetActive(false);
             }
         }
     }
