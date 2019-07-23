@@ -67,10 +67,10 @@ public class Movement : MonoBehaviour
             }
 
             // Heavy Attack
-            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block && HeavyPunch)
+            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block)
             {
-                Attack(attackHitboxes[0]);
-                animator.SetTrigger("punchTrigger");
+                HeavyAttack(attackHitboxes[0]);
+                animator.SetTrigger("heavyPunchTrigger");
                 idleTimer = 0;
                 punchTimer = punchTimerFixed;
                 walkTimer = walkTimerFixed;
@@ -271,6 +271,27 @@ public class Movement : MonoBehaviour
             {
                 case "EnemyHitbox":
                     c.SendMessageUpwards("TakeDamage", 1);
+                    break;
+                default:
+                    Debug.Log(c.name);
+                    break;
+            }
+        }
+    }
+    public void HeavyAttack(Collider collider)
+    {
+        Collider[] cols = Physics.OverlapBox(collider.bounds.center, collider.bounds.extents, collider.transform.rotation, LayerMask.GetMask("Hitboxes"));
+        foreach (Collider c in cols)
+        {
+            if (c.transform.root == transform)
+            {
+                continue;
+            }
+
+            switch (c.name)
+            {
+                case "EnemyHitbox":
+                    c.SendMessageUpwards("TakeHeavyDamage", 1);
                     break;
                 default:
                     Debug.Log(c.name);
