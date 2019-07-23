@@ -6078,6 +6078,11 @@ PrefabInstance:
       propertyPath: Hairs
       value: 
       objectReference: {fileID: 1113432081}
+    - target: {fileID: 8957083953551262291, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: Hair_Back_Idle
+      value: 
+      objectReference: {fileID: 1113432081}
     - target: {fileID: 572297953433117267, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6144,6 +6149,11 @@ PrefabInstance:
       objectReference: {fileID: 2021738861}
     - target: {fileID: 1113432081, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463625554722973361, guid: 08f9f1be14c6a364c9cd29ad2d6f3d6e,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

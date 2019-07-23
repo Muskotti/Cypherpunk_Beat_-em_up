@@ -28,7 +28,8 @@ public class Movement : MonoBehaviour
 
     public int Credit;
 
-    public GameObject Hairs;
+    public GameObject Hair_Back_Idle;
+    public List<String> AnimationNames;
 
     void Awake()
     {
@@ -37,11 +38,25 @@ public class Movement : MonoBehaviour
         HasKeyCard = false;
         Credit = 0;
         animator.SetBool("usingFist", false);
+        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
+        {
+            AnimationNames.Add(clip.name);
+        }
     }
 
     void Update()
     {
-        idleTimer += Time.deltaTime;
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back"))
+        {
+            Hair_Back_Idle.SetActive(true);
+        }
+        else
+        {
+            Hair_Back_Idle.SetActive(false);
+        }
+
+            idleTimer += Time.deltaTime;
         if(punchTimer > 0)
         {
             punchTimer -= Time.deltaTime;
