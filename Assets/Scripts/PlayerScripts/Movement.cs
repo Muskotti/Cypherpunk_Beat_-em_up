@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,6 +27,8 @@ public class Movement : MonoBehaviour
     public bool HasKeyCard;
 
     public int Credit;
+
+    public GameObject Hairs;
 
     void Awake()
     {

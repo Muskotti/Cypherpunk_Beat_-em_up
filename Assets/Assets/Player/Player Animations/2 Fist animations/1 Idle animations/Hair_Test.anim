@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_Idle_Back
+  m_Name: Hair_Test
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,24 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5125984006313736249, guid: 2edef94b0c6cebf439346f2e904c9b6a,
-        type: 3}
-    - time: 0.5
-      value: {fileID: 744256404067414424, guid: 2edef94b0c6cebf439346f2e904c9b6a,
-        type: 3}
-    attribute: m_Sprite
-    path: 
-    classID: 212
-    script: {fileID: 0}
-  - curve:
-    - time: 0
       value: {fileID: -1864738853335511941, guid: a01dc75f261f66345a4d1a39d0337214,
         type: 3}
     - time: 0.5
       value: {fileID: 1515770069064570096, guid: a01dc75f261f66345a4d1a39d0337214,
         type: 3}
     attribute: m_Sprite
-    path: Hairs/Hair_Back_Idle
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 2
@@ -54,16 +43,7 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
-    - serializedVersion: 2
-      path: 3075323574
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5125984006313736249, guid: 2edef94b0c6cebf439346f2e904c9b6a, type: 3}
-    - {fileID: 744256404067414424, guid: 2edef94b0c6cebf439346f2e904c9b6a, type: 3}
     - {fileID: -1864738853335511941, guid: a01dc75f261f66345a4d1a39d0337214, type: 3}
     - {fileID: 1515770069064570096, guid: a01dc75f261f66345a4d1a39d0337214, type: 3}
   m_AnimationClipSettings:
