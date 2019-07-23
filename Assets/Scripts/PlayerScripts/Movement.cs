@@ -29,7 +29,6 @@ public class Movement : MonoBehaviour
     public int Credit;
 
     public GameObject[] Hairs;
-    public List<String> AnimationNames;
 
     void Awake()
     {
@@ -38,10 +37,6 @@ public class Movement : MonoBehaviour
         HasKeyCard = false;
         Credit = 0;
         animator.SetBool("usingFist", false);
-        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
-        {
-            AnimationNames.Add(clip.name);
-        }
     }
 
     void Update()
@@ -209,10 +204,49 @@ public class Movement : MonoBehaviour
         {
             currentHair = 2;
         }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_side"))
+        {
+            currentHair = 3;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_back"))
+        {
+            currentHair = 4;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_walk_front"))
+        {
+            currentHair = 5;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_front"))
+        {
+            currentHair = 6;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_side"))
+        {
+            currentHair = 7;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_punch_back"))
+        {
+            currentHair = 8;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_side"))
+        {
+            currentHair = 9;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_front"))
+        {
+            currentHair = 10;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_block_back"))
+        {
+            currentHair = 11;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player2_idle"))
+        {
+            currentHair = 12;
+        }
 
         for (int i = Hairs.Length-1; i >= 0; i--)
         {
-            Debug.Log(i);
             if(currentHair == i)
             {
                 Hairs[i].SetActive(true);
@@ -221,7 +255,6 @@ public class Movement : MonoBehaviour
                 Hairs[i].SetActive(false);
             }
         }
-        
     }
 
     public void Attack(Collider collider)

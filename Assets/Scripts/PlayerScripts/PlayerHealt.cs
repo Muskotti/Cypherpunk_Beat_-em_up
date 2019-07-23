@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +30,7 @@ public class PlayerHealt : MonoBehaviour
     float mass = 3.0F; // defines the character mass
     Vector3 impact = Vector3.zero;
 
-    public SpriteRenderer GlowPart;
+    public GameObject[] Hairs;
 
     private void Awake()
     {
@@ -46,6 +47,8 @@ public class PlayerHealt : MonoBehaviour
 
     public void Update()
     {
+
+        StunHair();
 
         if (isStunned)
         {
@@ -97,41 +100,53 @@ public class PlayerHealt : MonoBehaviour
             isStunned = true;
             stunCountdown = stunTimer;
 
-            //Hair color switch
-            switch (currentHealth)
-            {
-                case 4:
-                    Debug.Log("Case 4");
-                    GlowPart.color = new Color(0.5f, 1f, 0, 1f);
-                    break;
-                case 3:
-                    Debug.Log("Case 3");
-                    GlowPart.color = new Color(1f, 1f, 0, 1f);
-                    break;
-                case 2:
-                    Debug.Log("Case 2");
-                    GlowPart.color = new Color(1f, 0.5f, 0, 1f);
-                    break;
-                case 1:
-                    Debug.Log("Case 1");
-                    GlowPart.color = new Color(1f, 0, 0, 1f);
-                    break;
-                case 0:
-                    Debug.Log("Case 0");
-                    GlowPart.color = new Color(1f, 0, 0, 1f);
-                    break;
-                default:
-                    Debug.Log("Case Default");
-                    GlowPart.color = new Color(0, 1f, 0, 1f);
-                    break;
-            }
-
             // Disable walking and punching when stunned
             GetComponent<Movement>().enabled = false;
 
             if (currentHealth <= 0 && !isDead)
             {
                 Death();
+            }
+        }
+    }
+
+    private void StunHair()
+    {
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_side") || 
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_front") || 
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_back"))
+        {
+            int currentHair = 0;
+
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_side"))
+            {
+                currentHair = 0;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_front"))
+            {
+                currentHair = 1;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_back"))
+            {
+                currentHair = 2;
+            }
+
+            for (int i = Hairs.Length - 1; i >= 0; i--)
+            {
+                if (currentHair == i)
+                {
+                    Hairs[i].SetActive(true);
+                }
+                else
+                {
+                    Hairs[i].SetActive(false);
+                }
+            }
+        } else
+        {
+            for (int i = Hairs.Length - 1; i >= 0; i--)
+            {
+                Hairs[i].SetActive(false);
             }
         }
     }
