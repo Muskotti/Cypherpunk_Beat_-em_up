@@ -62,10 +62,10 @@ public class Movement : MonoBehaviour
             }
 
             // Heavy Attack
-            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block && HeavyPunch)
+            if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block)
             {
                 Attack(attackHitboxes[0]);
-                animator.SetTrigger("punchTrigger");
+                animator.SetTrigger("heavyPunchTrigger");
                 idleTimer = 0;
                 punchTimer = punchTimerFixed;
                 walkTimer = walkTimerFixed;
