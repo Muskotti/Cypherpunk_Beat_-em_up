@@ -91,6 +91,7 @@ public class PlayerHealt : MonoBehaviour
 
             // Stun code
             animator.SetBool("isStunned", true);
+            animator.SetBool("idle2", false);
             isStunned = true;
             stunCountdown = stunTimer;
 

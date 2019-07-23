@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
         Block = false;
         HasKeyCard = false;
         Credit = 0;
+        animator.SetBool("usingFist", false);
     }
 
     void Update()
@@ -125,6 +126,29 @@ public class Movement : MonoBehaviour
                 {
                     idleTimer = 0;
                     animator.SetBool("isWalking", true);
+
+                    // Switch sprites between side, front and back
+                    // SIDE
+                    if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                    {
+                        animator.SetBool("lookingSide", true);
+                        animator.SetBool("lookingUp", false);
+                        animator.SetBool("lookingDown", false);
+                    }
+                    // UP
+                    else if (Input.GetKey(KeyCode.W))
+                    {
+                        animator.SetBool("lookingSide", false);
+                        animator.SetBool("lookingUp", true);
+                        animator.SetBool("lookingDown", false);
+                    }
+                    // DOWN
+                    else if (Input.GetKey(KeyCode.S))
+                    {
+                        animator.SetBool("lookingSide", false);
+                        animator.SetBool("lookingUp", false);
+                        animator.SetBool("lookingDown", true);
+                    }
                 }
                 else
                 {
@@ -186,6 +210,7 @@ public class Movement : MonoBehaviour
 
         // Changes Player sprite to have BFF
         animator.SetTrigger("fistSpriteTrigger");
+        animator.SetBool("usingFist", true);
     }
 
     public void PickUp(string str)
