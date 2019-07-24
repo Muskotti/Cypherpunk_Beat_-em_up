@@ -8,6 +8,7 @@ TagManager:
   - DeathScreen
   - Enemy
   - DialogScreen
+  - NextScene
   layers:
   - Default
   - TransparentFX
