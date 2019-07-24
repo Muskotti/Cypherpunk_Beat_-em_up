@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public float jumpSpeed = 8.0F;
     public float movementSpeed = 5.0f;
     private Vector3 moveDirection = Vector3.zero;
+    GameObject soundManager;
 
     public Animator animator;
 
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
     void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        soundManager = GameObject.Find("SoundManager");
         Block = false;
         HasKeyCard = false;
         Credit = 0;
@@ -324,9 +326,11 @@ public class Movement : MonoBehaviour
     {
         if(str.Equals("KeyCard"))
         {
+            soundManager.GetComponent<SoundManager>().KeycardPickupPlay();
             HasKeyCard = true;
         } else if(str.Equals("Credit"))
         {
+            soundManager.GetComponent<SoundManager>().CreditPickupPlay();
             Credit++;
         } else
         {

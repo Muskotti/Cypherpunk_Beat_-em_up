@@ -548,7 +548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1157069173
 AudioSource:
   m_ObjectHideFlags: 0
@@ -878,6 +878,10 @@ MonoBehaviour:
   hitSound1: {fileID: 0}
   hitSound2: {fileID: 0}
   enemyDeath: {fileID: 0}
+  buttonClick: {fileID: 8300000, guid: 5287b6758c646e94885d133be42f4ba2, type: 3}
+  creditPickup: {fileID: 0}
+  keycardPickup: {fileID: 0}
+  upgradeSound: {fileID: 0}
   menuTheme: {fileID: 493622863}
   battleTheme: {fileID: 1157069172}
 --- !u!4 &1498693067

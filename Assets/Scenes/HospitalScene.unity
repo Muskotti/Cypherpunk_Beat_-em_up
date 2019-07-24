@@ -22011,6 +22011,10 @@ MonoBehaviour:
   hitSound1: {fileID: 8300000, guid: 8ea040ee636a82a41a62d5788b2d1791, type: 3}
   hitSound2: {fileID: 8300000, guid: 0a624f07e3d20de4aa8df3f5ff583553, type: 3}
   enemyDeath: {fileID: 8300000, guid: 8a0de2e9cfb435c4e87440bd3720ff86, type: 3}
+  buttonClick: {fileID: 8300000, guid: 5287b6758c646e94885d133be42f4ba2, type: 3}
+  creditPickup: {fileID: 8300000, guid: f0abc3d917dfca54390f59db819e217a, type: 3}
+  keycardPickup: {fileID: 8300000, guid: 6dfe8f2754e448643beca783baa6a459, type: 3}
+  upgradeSound: {fileID: 8300000, guid: 820f2b353b056d74eb7efd90522d70a9, type: 3}
   menuTheme: {fileID: 356251732}
   battleTheme: {fileID: 0}
 --- !u!4 &8968874930735682997

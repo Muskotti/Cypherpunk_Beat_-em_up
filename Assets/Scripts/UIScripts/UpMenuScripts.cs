@@ -10,6 +10,8 @@ public class UpMenuScripts : MonoBehaviour
     public GameObject punchPlus;
     public TextMeshProUGUI Credit;
 
+    GameObject soundManager;
+
     GameObject thePlayer;
     Movement playerScript;
 
@@ -17,16 +19,19 @@ public class UpMenuScripts : MonoBehaviour
     {
         thePlayer = GameObject.Find("Player");
         playerScript = thePlayer.GetComponent<Movement>();
+        soundManager = GameObject.Find("SoundManager");
     }
 
     public void FasterPunch()
     {
+        soundManager.GetComponent<SoundManager>().UpgradePlay();
         Player.SendMessage("UpgradePunch", true);
         punchPlus.SetActive(false);
     }
 
     public void MenuExit()
     {
+        soundManager.GetComponent<SoundManager>().ButtonClickPlay();
         upgradeMenuUI.SetActive(false);
         Player.SendMessage("SetMoveStatus", true);
     }

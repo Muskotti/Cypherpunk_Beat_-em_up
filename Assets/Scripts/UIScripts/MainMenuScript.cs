@@ -17,11 +17,13 @@ public class MainMenuScript : MonoBehaviour
 
     public void playGame()
     {
+        soundManager.GetComponent<SoundManager>().ButtonClickPlay();
         SceneManager.LoadScene("LoadingScene");
     }
     
     public void quitGame()
     {
+        soundManager.GetComponent<SoundManager>().ButtonClickPlay();
         Debug.Log("QUIT!");
         Application.Quit();
     }
