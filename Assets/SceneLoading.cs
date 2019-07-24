@@ -17,7 +17,8 @@ public class SceneLoading : MonoBehaviour
 
     IEnumerator LoadAsyncOperation()
     {
-        AsyncOperation gameLevel = SceneManager.LoadSceneAsync("HospitalScene");
+        string nextScene = GameObject.Find("Next Scene").GetComponent<NextScene>().nextScene;
+        AsyncOperation gameLevel = SceneManager.LoadSceneAsync(nextScene);
 
         while (gameLevel.progress < 1)
         {

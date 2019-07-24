@@ -34,7 +34,7 @@ public class LevelEnd : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown("e"))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("LoadingScene");
         }
     }
 }
