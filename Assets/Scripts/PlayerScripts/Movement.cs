@@ -244,6 +244,82 @@ public class Movement : MonoBehaviour
         {
             currentHair = 12;
         }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_heavypunch_side"))
+        {
+            currentHair = 13;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_heavypunch_front"))
+        {
+            currentHair = 14;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_heavypunch_back"))
+        {
+            currentHair = 15;
+        }
+        else if(animator.GetCurrentAnimatorStateInfo(0).IsName("First_idle_back"))
+        {
+            currentHair = 16;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_Idle_side"))
+        {
+            currentHair = 17;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("First_Idle_front"))
+        {
+            currentHair = 18;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_walk_side"))
+        {
+            currentHair = 19;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_walk_back"))
+        {
+            currentHair = 20;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_walk_front"))
+        {
+            currentHair = 21;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_punch_front"))
+        {
+            currentHair = 22;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_punch_side"))
+        {
+            currentHair = 23;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_punch_back"))
+        {
+            currentHair = 24;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_heavypunch_front"))
+        {
+            currentHair = 25;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_heavypunch_side"))
+        {
+            currentHair = 26;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_heavypunch_back"))
+        {
+            currentHair = 27;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_block_front"))
+        {
+            currentHair = 28;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_Block_side"))
+        {
+            currentHair = 29;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_block_back"))
+        {
+            currentHair = 30;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist2_Idle"))
+        {
+            currentHair = 31;
+        }
 
         for (int i = Hairs.Length-1; i >= 0; i--)
         {
