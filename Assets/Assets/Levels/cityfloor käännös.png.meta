@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: 64a708ab432e2f143ae5fcbe27356f14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2690511368376393635
+    second: "cityfloor k\xE4\xE4nn\xF6s_0"
+  - first:
+      213: -545779275454777294
+    second: "cityfloor k\xE4\xE4nn\xF6s_1"
+  - first:
+      213: -6004224968458541123
+    second: "cityfloor k\xE4\xE4nn\xF6s_2"
+  - first:
+      213: -820178988651580622
+    second: "cityfloor k\xE4\xE4nn\xF6s_3"
+  - first:
+      213: -3092802025999114843
+    second: "cityfloor k\xE4\xE4nn\xF6s_4"
+  - first:
+      213: 7901557118285213194
+    second: "cityfloor k\xE4\xE4nn\xF6s_5"
+  - first:
+      213: -279303491945726217
+    second: "cityfloor k\xE4\xE4nn\xF6s_6"
+  - first:
+      213: -1227695415071729200
+    second: "cityfloor k\xE4\xE4nn\xF6s_7"
+  - first:
+      213: 8736717112898465653
+    second: "cityfloor k\xE4\xE4nn\xF6s_8"
+  - first:
+      213: 7466808061662174942
+    second: "cityfloor k\xE4\xE4nn\xF6s_9"
+  - first:
+      213: -5790348734760825486
+    second: "cityfloor k\xE4\xE4nn\xF6s_10"
+  - first:
+      213: -6390928493320865157
+    second: "cityfloor k\xE4\xE4nn\xF6s_11"
+  - first:
+      213: 9002873905714264961
+    second: "cityfloor k\xE4\xE4nn\xF6s_12"
+  - first:
+      213: 6396287328528360954
+    second: "cityfloor k\xE4\xE4nn\xF6s_13"
+  - first:
+      213: 2419170531848047335
+    second: "cityfloor k\xE4\xE4nn\xF6s_14"
+  - first:
+      213: 6042613286492563783
+    second: "cityfloor k\xE4\xE4nn\xF6s_15"
+  - first:
+      213: 9076845806986985437
+    second: "cityfloor k\xE4\xE4nn\xF6s_16"
+  - first:
+      213: -8548489139010768786
+    second: "cityfloor k\xE4\xE4nn\xF6s_17"
+  - first:
+      213: -7359934457370239315
+    second: "cityfloor k\xE4\xE4nn\xF6s_18"
+  - first:
+      213: 3012062345611108276
+    second: "cityfloor k\xE4\xE4nn\xF6s_19"
+  - first:
+      213: 7509567334377540958
+    second: "cityfloor k\xE4\xE4nn\xF6s_20"
+  - first:
+      213: 1209579837148023789
+    second: "cityfloor k\xE4\xE4nn\xF6s_21"
+  - first:
+      213: -5373609911140008510
+    second: "cityfloor k\xE4\xE4nn\xF6s_22"
+  - first:
+      213: -529771776799393734
+    second: "cityfloor k\xE4\xE4nn\xF6s_23"
+  - first:
+      213: 1428281473442554414
+    second: "cityfloor k\xE4\xE4nn\xF6s_24"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10db30cb87b66bb488eb382b2f73080c
+      internalID: 2690511368376393635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_1"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 150
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd279bad30772e4085be21c7a3e93b9
+      internalID: -545779275454777294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_2"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 150
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0948b3bb7a4840bc8c3b588757b03
+      internalID: -6004224968458541123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_3"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e75f487f86210f46bafaae9f46433d7
+      internalID: -820178988651580622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_4"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 150
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac85065f82c04c24f9c77f46695affe7
+      internalID: -3092802025999114843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_5"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1a2140873fb75478b6a7b91bad3158
+      internalID: 7901557118285213194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_6"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f6663daade6ce43bdad40432a8dbab
+      internalID: -279303491945726217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_7"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36fa67a08533f346afddbbb3d4225fa
+      internalID: -1227695415071729200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_8"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 100
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d3a39f7d38ff849bf813c5ecf201fa
+      internalID: 8736717112898465653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_9"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e7ef8311d745c4092606461b66dfb2
+      internalID: 7466808061662174942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_10"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af92853486688f47826af47f1bf9f3c
+      internalID: -5790348734760825486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_11"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d54e02ca35e9d144bea83988c5fdbe2
+      internalID: -6390928493320865157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_12"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0032f4602205cf043b1e9f325b33e3a6
+      internalID: 9002873905714264961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_13"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdba88d6f6b9b14e9114213d05fdbf9
+      internalID: 6396287328528360954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_14"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6705e41c4a812354095d261b918adc03
+      internalID: 2419170531848047335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c889945a3473e498e89078fa54367c
+      internalID: 6042613286492563783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_16"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29339f4fdb471a4c8440458a31fa85a
+      internalID: 9076845806986985437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_17"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f852394e312377a499cf116fa84f04e7
+      internalID: -8548489139010768786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_18"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6188d027db53d74d9ee0f668eed12e0
+      internalID: -7359934457370239315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cityfloor k\xE4\xE4nn\xF6s_19"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbf458a69605864a88f39000b36e062
+      internalID: 3012062345611108276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7c593f16140d1cb44b3f1a5252319915
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

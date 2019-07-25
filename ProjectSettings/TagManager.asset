@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UpgradeMenu
+  - DeathScreen
+  - Enemy
+  - DialogScreen
+  - NextScene
   layers:
   - Default
   - TransparentFX
@@ -13,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Hitboxes
+  - Terrain
+  - Enemy
   - 
   - 
   - 
