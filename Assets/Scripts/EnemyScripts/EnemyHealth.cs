@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     CharacterController cc;
 
     // Knockback
-    float mass = 3.0F; // defines the character mass
+    float mass = 4.0F; // defines the character mass
     Vector3 impact = Vector3.zero;
 
     void Start()
@@ -43,6 +43,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (stunCountdown <= 0)
         {
+            GetComponent<AIPath>().enabled = true;
             isStunned = false;
             stunCountdown = stunTimer;
             animator.SetBool("isStunned", false);
@@ -55,7 +56,6 @@ public class EnemyHealth : MonoBehaviour
         // Knockback
         if (impact.magnitude > 0.2F && GetComponent<AIDestinationSetter>().canMove)
         {
-            cc.Move(impact * Time.deltaTime);
             // consumes the impact energy each cycle:
             impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
         }
@@ -63,12 +63,13 @@ public class EnemyHealth : MonoBehaviour
         if (GetComponent<AIDestinationSetter>().canMove)
         {
             impact.y -= 20f * Time.deltaTime;
-            cc.Move(impact * Time.deltaTime);
+            cc.Move(impact * Time.deltaTime * 3);
         }
     }
 
-    private void TakeDamage(float damage)
+    private void TakeDamage(String direction)
     {
+        GetComponent<AIPath>().enabled = false;
         // Activate enemy pathfinding, if not yet active
         if (GetComponent<AIDestinationSetter>().canMove == false)
         {
@@ -81,6 +82,26 @@ public class EnemyHealth : MonoBehaviour
         animator.SetBool("isStunned", true);
         isStunned = true;
         stunCountdown = stunTimer;
+
+        // Knockback enemy, if it's in the air
+        if (impact.y > -3.9)
+        {
+            switch(direction)
+            {
+                case "up":
+                    AddImpact(new Vector3(0, 0, 1), 30);
+                    break;
+                case "down":
+                    AddImpact(new Vector3(0, 0, -1), 30);
+                    break;
+                case "left":
+                    AddImpact(new Vector3(-1, 0, 0), 30);
+                    break;
+                case "right":
+                    AddImpact(new Vector3(1, 0, 0), 30);
+                    break;
+            }
+        }
 
         // Disable walking and punching when stunned
         GetComponent<EnemyHit>().enabled = false;
@@ -100,7 +121,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(hitmarker, 1f);
         }
 
-        health -= damage;
+        health -= 1;
 
         if (health <= 0) {
             SpawnCredit();
@@ -108,9 +129,9 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void TakeHeavyDamage(float damage)
+    private void TakeHeavyDamage(String direction)
     {
-        TakeDamage(damage);
+        TakeDamage(direction);
         AddImpact(new Vector3(0, -1, 0), 60);
         stunCountdown = 1.5f;
     }

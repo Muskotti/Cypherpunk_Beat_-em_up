@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public float jumpSpeed = 8.0F;
     public float movementSpeed = 5.0f;
     private Vector3 moveDirection = Vector3.zero;
+    public String direction;
     GameObject soundManager;
 
     public Animator animator;
@@ -39,6 +40,7 @@ public class Movement : MonoBehaviour
         HasKeyCard = false;
         Credit = 0;
         animator.SetBool("usingFist", false);
+        direction = "right";
     }
 
     void Update()
@@ -61,7 +63,7 @@ public class Movement : MonoBehaviour
             // Attack
             if (Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block)
             {
-                Attack(attackHitboxes[0]);
+                Attack(attackHitboxes[0], direction);
                 animator.SetTrigger("punchTrigger");
                 idleTimer = 0;
                 punchTimer = punchTimerFixed;
@@ -71,7 +73,7 @@ public class Movement : MonoBehaviour
             // Heavy Attack
             if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerHealt>().currentHealth > 0 && punchTimer <= 0 && !Block)
             {
-                HeavyAttack(attackHitboxes[0]);
+                HeavyAttack(attackHitboxes[0], direction);
                 animator.SetTrigger("heavyPunchTrigger");
                 idleTimer = 0;
                 punchTimer = punchTimerFixed;
@@ -138,6 +140,15 @@ public class Movement : MonoBehaviour
                     // SIDE
                     if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                     {
+                        if (Input.GetKey(KeyCode.A))
+                        {
+                            direction = "left";
+                        }
+                        else
+                        {
+                            direction = "right";
+                        }
+
                         animator.SetBool("lookingSide", true);
                         animator.SetBool("lookingUp", false);
                         animator.SetBool("lookingDown", false);
@@ -153,6 +164,7 @@ public class Movement : MonoBehaviour
                     // UP
                     else if (Input.GetKey(KeyCode.W))
                     {
+                        direction = "up";
                         animator.SetBool("lookingSide", false);
                         animator.SetBool("lookingUp", true);
                         animator.SetBool("lookingDown", false);
@@ -162,6 +174,7 @@ public class Movement : MonoBehaviour
                     // DOWN
                     else if (Input.GetKey(KeyCode.S))
                     {
+                        direction = "down";
                         animator.SetBool("lookingSide", false);
                         animator.SetBool("lookingUp", false);
                         animator.SetBool("lookingDown", true);
@@ -259,9 +272,10 @@ public class Movement : MonoBehaviour
         }
     }
 
-    public void Attack(Collider collider)
+    public void Attack(Collider collider, String direction)
     {
         Collider[] cols = Physics.OverlapBox(collider.bounds.center, collider.bounds.extents, collider.transform.rotation,LayerMask.GetMask("Hitboxes"));
+
         foreach(Collider c in cols)
         {
             if (c.transform.root == transform)
@@ -272,7 +286,7 @@ public class Movement : MonoBehaviour
             switch(c.name)
             {
                 case "EnemyHitbox":
-                    c.SendMessageUpwards("TakeDamage", 1);
+                    c.SendMessageUpwards("TakeDamage", direction);
                     break;
                 default:
                     Debug.Log(c.name);
@@ -280,7 +294,7 @@ public class Movement : MonoBehaviour
             }
         }
     }
-    public void HeavyAttack(Collider collider)
+    public void HeavyAttack(Collider collider, String direction)
     {
         Collider[] cols = Physics.OverlapBox(collider.bounds.center, collider.bounds.extents, collider.transform.rotation, LayerMask.GetMask("Hitboxes"));
         foreach (Collider c in cols)
@@ -293,7 +307,7 @@ public class Movement : MonoBehaviour
             switch (c.name)
             {
                 case "EnemyHitbox":
-                    c.SendMessageUpwards("TakeHeavyDamage", 1);
+                    c.SendMessageUpwards("TakeHeavyDamage", direction);
                     break;
                 default:
                     Debug.Log(c.name);
