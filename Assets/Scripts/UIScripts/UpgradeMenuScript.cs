@@ -8,6 +8,8 @@ public class UpgradeMenuScript : MonoBehaviour
     public GameObject upgradeMenuUI;
     public GameObject E;
 
+    GameObject soundManager;
+
     bool playerInRange;
     bool active;
     bool pressed;
@@ -17,6 +19,7 @@ public class UpgradeMenuScript : MonoBehaviour
         active = false;
         player = GameObject.FindGameObjectWithTag("Player");
         upgradeMenuUI.SetActive(false);
+        soundManager = GameObject.Find("SoundManager");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,6 +44,7 @@ public class UpgradeMenuScript : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown("e") && pressed)
         {
+            soundManager.GetComponent<SoundManager>().ButtonClickPlay();
             pressed = false;
             activateMenu();
         } else

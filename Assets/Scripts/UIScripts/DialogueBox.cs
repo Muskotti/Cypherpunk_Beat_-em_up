@@ -9,18 +9,22 @@ public class DialogueBox : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialog;
 
+    GameObject soundManager;
+
     bool Talking;
     
     void Awake()
     {
         Talking = true;
         player = GameObject.FindGameObjectWithTag("Player");
+        soundManager = GameObject.Find("SoundManager");
     }
     
     void Update()
     {
         if (Input.GetKeyDown("e") && dialogBox.activeSelf)
         {
+            soundManager.GetComponent<SoundManager>().ButtonClickPlay();
             player.SendMessage("SetMoveStatus", true);
             Talking = false;
             dialogBox.SetActive(false);

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 987799637636135737}
   - component: {fileID: 3892589408708624257}
   - component: {fileID: 1342654961}
+  - component: {fileID: 888298230403154206}
   m_Layer: 10
   m_Name: Enemy 2
   m_TagString: Untagged
@@ -245,7 +246,7 @@ MonoBehaviour:
     type: 3}
   enemydead: {fileID: 4229384368839457702, guid: 438bc72ef4e66c541bf8df94739bf719,
     type: 3}
-  Credit: {fileID: 0}
+  Credit: {fileID: 8187150367757764700, guid: dbd1fe1669e85b74fb53860f4b1058bd, type: 3}
 --- !u!212 &987799637636135737
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -326,3 +327,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &888298230403154206
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987799637636135712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 40
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.01
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: -3.5, z: 0}

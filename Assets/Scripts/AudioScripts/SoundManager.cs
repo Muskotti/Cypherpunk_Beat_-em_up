@@ -6,11 +6,19 @@ public class SoundManager : MonoBehaviour
 {
     AudioSource audioSource;
 
+    // Combat sounds
     public AudioClip Uuf;
     public AudioClip hitSound1;
     public AudioClip hitSound2;
     public AudioClip enemyDeath;
 
+    // Pickup sounds
+    public AudioClip buttonClick;
+    public AudioClip creditPickup;
+    public AudioClip keycardPickup;
+    public AudioClip upgradeSound;
+
+    // Music
     public GameObject menuTheme;
     public GameObject battleTheme;
 
@@ -31,7 +39,7 @@ public class SoundManager : MonoBehaviour
         menuTheme.SetActive(false);
     }
 
-    // Sound effects
+    // Combat sound effects
     public void takeDamagePlay()
     {
         audioSource.pitch = 1f;
@@ -54,5 +62,30 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.pitch = 1f;
         audioSource.PlayOneShot(enemyDeath, 1f);
+    }
+
+    // Pickup sound effects
+    public void ButtonClickPlay()
+    {
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(buttonClick, 1f);
+    }
+
+    public void CreditPickupPlay()
+    {
+        audioSource.PlayOneShot(creditPickup, 0.7f);
+        audioSource.pitch = 1f;
+    }
+
+    public void KeycardPickupPlay()
+    {
+        audioSource.PlayOneShot(keycardPickup, 2f);
+        audioSource.pitch = 1f;
+    }
+
+    public void UpgradePlay()
+    {
+        audioSource.PlayOneShot(upgradeSound, 0.7f);
+        audioSource.pitch = 1f;
     }
 }

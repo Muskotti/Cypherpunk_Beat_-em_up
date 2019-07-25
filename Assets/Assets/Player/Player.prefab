@@ -7027,6 +7027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 8
   movementSpeed: 5
+  direction: 
   animator: {fileID: 586668547}
   attackHitboxes:
   - {fileID: 2230475141706080300}
@@ -7175,7 +7176,7 @@ Transform:
   m_GameObject: {fileID: 6550803142822742265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.5, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 2.9807, z: 2.5717}
   m_Children: []
   m_Father: {fileID: 5248183167454704198}
   m_RootOrder: 0
