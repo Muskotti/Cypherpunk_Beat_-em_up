@@ -73,6 +73,12 @@ public class EnemyHealth : MonoBehaviour
             SpawnCredit();
             Die();
         }
+
+        // Keycard location for last enemy
+        if (GetComponentInParent<KeyCardScript>().childs == 1)
+        {
+            GetComponentInParent<KeyCardScript>().SaveLocation(transform.position);
+        }
     }
 
     private void TakeDamage(String direction)
@@ -190,5 +196,7 @@ public class EnemyHealth : MonoBehaviour
             transform.Rotate(0, 0, -90);
             transform.localPosition = new Vector3(transform.localPosition.x + 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
         }
+
+        SendMessageUpwards("DecreaseChildAmount");
     }
 }
