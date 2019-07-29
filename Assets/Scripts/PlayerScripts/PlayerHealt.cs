@@ -88,12 +88,12 @@ public class PlayerHealt : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        // Blood splatter on the ground
-        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
-        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z);
-        splatter.transform.Rotate(-90, 0, 0);
-
         if (!gameObject.GetComponent<Movement>().Block) {
+            // Blood splatter on the ground
+            GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+            splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z - 0.5f);
+            splatter.transform.Rotate(-90, 0, 0);
+
             Debug.Log(gameObject.GetComponent<Movement>().Block);
             soundManager.GetComponent<SoundManager>().takeDamagePlay();
             currentHealth -= amount;
