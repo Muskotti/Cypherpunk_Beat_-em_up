@@ -90,7 +90,7 @@ public class EnemyHealth : MonoBehaviour
         stunCountdown = stunTimer;
 
         // Knockback enemy, if it's in the air
-        if (impact.y > -3.9)
+        if (impact.y > -3.8)
         {
             switch(direction)
             {
