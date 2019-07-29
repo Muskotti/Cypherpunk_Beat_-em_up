@@ -170,7 +170,10 @@ public class PlayerHealt : MonoBehaviour
     {
         knockedBack = true;
 
-        PlayerLieDown();
+        if (currentHealth > 0)
+        {
+            PlayerLieDown();
+        }
 
         dir.Normalize();
         if (dir.y < 0)
