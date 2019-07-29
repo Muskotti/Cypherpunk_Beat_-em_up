@@ -6,7 +6,7 @@ using System;
 
 public class EnemyHealth : MonoBehaviour
 {
-    float health;
+    public float health;
     public float stunTimer;
     public float stunCountdown;
     bool isStunned;
@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         health = 3;
-        stunCountdown = stunTimer;
+        stunCountdown = 0;
         isStunned = false;
         soundManager = GameObject.Find("SoundManager");
         cc = GetComponent<CharacterController>();
@@ -46,7 +46,7 @@ public class EnemyHealth : MonoBehaviour
         {
             GetComponent<AIPath>().enabled = true;
             isStunned = false;
-            stunCountdown = stunTimer;
+            stunCountdown = 0;
             animator.SetBool("isStunned", false);
 
             // Enable scripts after stun ends
@@ -65,6 +65,13 @@ public class EnemyHealth : MonoBehaviour
         {
             impact.y -= 20f * Time.deltaTime;
             cc.Move(impact * Time.deltaTime * 3);
+        }
+
+        // Death
+        if (health <= 0 && stunCountdown <= 0)
+        {
+            SpawnCredit();
+            Die();
         }
     }
 
@@ -90,7 +97,7 @@ public class EnemyHealth : MonoBehaviour
         stunCountdown = stunTimer;
 
         // Knockback enemy, if it's in the air
-        if (impact.y > -3.9)
+        if (impact.y > -3.8)
         {
             switch(direction)
             {
@@ -128,18 +135,13 @@ public class EnemyHealth : MonoBehaviour
         }
 
         health -= 1;
-
-        if (health <= 0) {
-            SpawnCredit();
-            Destroy(this.gameObject);
-        }
     }
 
     private void TakeHeavyDamage(String direction)
     {
         TakeDamage(direction);
         AddImpact(new Vector3(0, -1, 0), 60);
-        stunCountdown = 1.5f;
+        stunCountdown = 0.7f;
     }
 
     public void AddImpact(Vector3 dir, float force)
@@ -156,5 +158,37 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject newBox = Instantiate(Credit);
         newBox.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
+    }
+
+    private void Die()
+    {
+        animator.SetTrigger("deathTrigger");
+        animator.SetBool("isStunned", false);
+        animator.SetBool("isWalking", false);
+
+        MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour c in comps)
+        {
+            c.enabled = false;
+        }
+        GetComponent<CharacterController>().enabled = false;
+
+        GetComponent<SpriteRenderer>().enabled = true;
+
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
+        if (transform.localScale.x > 0)
+        {
+            transform.Rotate(0, 0, 90);
+            transform.localPosition = new Vector3(transform.localPosition.x - 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
+        }
+        else if (transform.localScale.x < 0)
+        {
+            transform.Rotate(0, 0, -90);
+            transform.localPosition = new Vector3(transform.localPosition.x + 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
+        }
     }
 }
