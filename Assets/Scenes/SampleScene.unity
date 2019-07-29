@@ -1988,7 +1988,7 @@ Transform:
   - {fileID: 1462318592}
   - {fileID: 832759329}
   m_Father: {fileID: 1463148685}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1011329491 stripped
 Transform:
@@ -7844,8 +7844,8 @@ Transform:
   - {fileID: 7387652370739593719}
   - {fileID: 280376558}
   - {fileID: 1278515754}
-  - {fileID: 2071819872}
   - {fileID: 996283139}
+  - {fileID: 2071819872}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98644,6 +98644,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 914997952}
     m_Modifications:
+    - target: {fileID: 4389991947705008806, guid: a557911a698a33f478c7a6468f6a771c,
+        type: 3}
+      propertyPath: m_Name
+      value: CityPart (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8813084003367065318, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98708,11 +98713,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389991947705008806, guid: a557911a698a33f478c7a6468f6a771c,
-        type: 3}
-      propertyPath: m_Name
-      value: CityPart (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1178985412006039955, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
@@ -98900,7 +98900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934896971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 148.85, y: 0.44398546, z: 8.382879}
+  m_LocalPosition: {x: 42.13, y: 0.44398546, z: 14.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

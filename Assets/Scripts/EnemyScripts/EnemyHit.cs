@@ -40,6 +40,12 @@ public class EnemyHit : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        // Change target destination to exit point, when Player dies.
+        if (player.GetComponent<PlayerHealt>().currentHealth <= 0)
+        {
+            GetComponent<AIDestinationSetter>().target = GameObject.Find("Enemy exit point").transform;
+        }
     }
 
     void hitPlayer()
