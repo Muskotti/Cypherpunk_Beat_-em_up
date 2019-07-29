@@ -242,6 +242,8 @@ MonoBehaviour:
   stunTimer: 0.2
   stunCountdown: 0
   animator: {fileID: 1342654961}
+  bloodSplatter: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+    type: 3}
   enemyhit: {fileID: 9155267098880590332, guid: 3126cfb61073645459566ceb975c99b8,
     type: 3}
   enemydead: {fileID: 4229384368839457702, guid: 438bc72ef4e66c541bf8df94739bf719,

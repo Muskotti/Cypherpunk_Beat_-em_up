@@ -1722,6 +1722,12 @@ PrefabInstance:
       propertyPath: stunTimer
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748992, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+        type: 3}
     - target: {fileID: 722204863, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
       propertyPath: m_Size.x
       value: 62.946083
@@ -99164,6 +99170,12 @@ PrefabInstance:
       propertyPath: stunTimer
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748992, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+        type: 3}
     - target: {fileID: 722204863, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
       propertyPath: m_Size.x
       value: 40.65775
