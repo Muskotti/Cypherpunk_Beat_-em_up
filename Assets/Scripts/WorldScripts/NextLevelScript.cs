@@ -46,6 +46,7 @@ public class NextLevelScript : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown("e") && playerKeyCard.HasKeyCard)
         {
+            SavedInfo.Credits = playerKeyCard.GetCredit();
             SceneManager.LoadScene("LoadingScene");
         }
         else if (playerInRange && Input.GetKeyDown("e") && pressed)

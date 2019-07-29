@@ -24,9 +24,13 @@ public class UpMenuScripts : MonoBehaviour
 
     public void FasterPunch()
     {
-        soundManager.GetComponent<SoundManager>().UpgradePlay();
-        Player.SendMessage("UpgradePunch", true);
-        punchPlus.SetActive(false);
+        if(playerScript.GetCredit() >= 5)
+        {
+            soundManager.GetComponent<SoundManager>().UpgradePlay();
+            Player.SendMessage("UpgradePunch", true);
+            punchPlus.SetActive(false);
+            playerScript.SetCredits(5);
+        }
     }
 
     public void MenuExit()

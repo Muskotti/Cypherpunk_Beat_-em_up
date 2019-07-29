@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
         Credit = 0;
         animator.SetBool("usingFist", false);
         direction = "right";
+        Credit = SavedInfo.Credits;
     }
 
     void Update()
@@ -432,5 +433,10 @@ public class Movement : MonoBehaviour
     public int GetCredit()
     {
         return Credit;
+    }
+
+    public void SetCredits(int value)
+    {
+        Credit -= value;
     }
 }
