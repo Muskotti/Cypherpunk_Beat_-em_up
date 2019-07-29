@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c30ac04f02c874ebbde54a2e0d3509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   stunTimer: 0.2
   stunCountdown: 0
   animator: {fileID: 2129710904}
