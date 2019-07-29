@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2609746663521674572}
   - component: {fileID: 1178230414445708884}
   - component: {fileID: 2739305030592916263}
+  - component: {fileID: 308515531310302785}
   m_Layer: 0
   m_Name: BloodSplatter
   m_TagString: Untagged
@@ -49,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ec97c80df601c994d8544a1acdc4a389, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,15 @@ MonoBehaviour:
   - {fileID: -1305042773188254684, guid: 1422b62836b127644860d088b4c0c12a, type: 3}
   - {fileID: 1004033593528523554, guid: 1422b62836b127644860d088b4c0c12a, type: 3}
   - {fileID: 5238831734481487701, guid: 1422b62836b127644860d088b4c0c12a, type: 3}
+--- !u!114 &308515531310302785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6829656893431433828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00389dbbf413384b8855e66f93947e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
