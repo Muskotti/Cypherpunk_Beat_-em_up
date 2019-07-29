@@ -114,7 +114,10 @@ public class PlayerHealt : MonoBehaviour
     {
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_side") || 
             animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_front") || 
-            animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_back"))
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_back") ||
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_side") ||
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_front") ||
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_back"))
         {
             int currentHair = 0;
 
@@ -129,6 +132,18 @@ public class PlayerHealt : MonoBehaviour
             else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_stun_back"))
             {
                 currentHair = 2;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_side"))
+            {
+                currentHair = 3;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_front"))
+            {
+                currentHair = 4;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fist_stun_back"))
+            {
+                currentHair = 5;
             }
 
             for (int i = Hairs.Length - 1; i >= 0; i--)

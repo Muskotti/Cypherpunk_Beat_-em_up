@@ -25,6 +25,20 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 4592a7842c34d5b45815c9513885871d, type: 3}
+    attribute: m_Sprite
+    path: Hairs/Hair_heavy_block_front
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 4592a7842c34d5b45815c9513885871d, type: 3}
+    attribute: m_Sprite
+    path: Hairs/Hair_heavy_block_front/BackPiece
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 1
   m_WrapMode: 0
   m_Bounds:
@@ -39,8 +53,24 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 163506048
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 3289097521
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 097fad6263885b84180c333a42fa6a37, type: 3}
+    - {fileID: 21300000, guid: 4592a7842c34d5b45815c9513885871d, type: 3}
+    - {fileID: 21300000, guid: 4592a7842c34d5b45815c9513885871d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
