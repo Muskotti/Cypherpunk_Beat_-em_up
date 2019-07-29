@@ -73,7 +73,7 @@ public class EnemyHealth : MonoBehaviour
         // Blood splatter on the ground
         GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
         splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z - 0.5f);
-        splatter.transform.Rotate(-90, 0, 0);
+        splatter.transform.Rotate(90, 0, 0);
 
         GetComponent<AIPath>().enabled = false;
         // Activate enemy pathfinding, if not yet active
