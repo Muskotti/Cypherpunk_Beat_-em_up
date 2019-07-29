@@ -7091,6 +7091,8 @@ MonoBehaviour:
   startHealt: 5
   currentHealth: 0
   deathScreen: {fileID: 0}
+  bloodSplatter: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+    type: 3}
   isDead: 0
   playerhit: {fileID: 8226749928745809768, guid: d2f387f7ca33392408744d8e54281682,
     type: 3}

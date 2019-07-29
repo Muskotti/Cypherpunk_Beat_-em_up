@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     GameObject soundManager;
     public Animator animator;
 
+    public GameObject bloodSplatter;
     public GameObject enemyhit;
     public GameObject enemydead;
 
@@ -69,6 +70,11 @@ public class EnemyHealth : MonoBehaviour
 
     private void TakeDamage(String direction)
     {
+        // Blood splatter on the ground
+        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z);
+        splatter.transform.Rotate(-90, 0, 0);
+
         GetComponent<AIPath>().enabled = false;
         // Activate enemy pathfinding, if not yet active
         if (GetComponent<AIDestinationSetter>().canMove == false)

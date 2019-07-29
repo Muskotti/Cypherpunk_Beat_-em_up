@@ -11,6 +11,7 @@ public class PlayerHealt : MonoBehaviour
     bool knockedBack;
 
     public GameObject deathScreen;
+    public GameObject bloodSplatter;
     
     public bool isDead;
 
@@ -87,6 +88,11 @@ public class PlayerHealt : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        // Blood splatter on the ground
+        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z);
+        splatter.transform.Rotate(-90, 0, 0);
+
         if (!gameObject.GetComponent<Movement>().Block) {
             Debug.Log(gameObject.GetComponent<Movement>().Block);
             soundManager.GetComponent<SoundManager>().takeDamagePlay();
@@ -170,7 +176,10 @@ public class PlayerHealt : MonoBehaviour
     {
         knockedBack = true;
 
-        PlayerLieDown();
+        if (currentHealth > 0)
+        {
+            PlayerLieDown();
+        }
 
         dir.Normalize();
         if (dir.y < 0)

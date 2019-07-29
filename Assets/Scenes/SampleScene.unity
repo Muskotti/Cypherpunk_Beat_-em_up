@@ -1722,6 +1722,12 @@ PrefabInstance:
       propertyPath: stunTimer
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748992, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+        type: 3}
     - target: {fileID: 722204863, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
       propertyPath: m_Size.x
       value: 62.946083
@@ -98657,6 +98663,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 914997952}
     m_Modifications:
+    - target: {fileID: 4389991947705008806, guid: a557911a698a33f478c7a6468f6a771c,
+        type: 3}
+      propertyPath: m_Name
+      value: CityPart (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8813084003367065318, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98721,11 +98732,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389991947705008806, guid: a557911a698a33f478c7a6468f6a771c,
-        type: 3}
-      propertyPath: m_Name
-      value: CityPart (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1178985412006039955, guid: a557911a698a33f478c7a6468f6a771c,
         type: 3}
@@ -98913,7 +98919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934896971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 148.85, y: 0.44398546, z: 8.382879}
+  m_LocalPosition: {x: 42.13, y: 0.44398546, z: 14.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99177,6 +99183,12 @@ PrefabInstance:
       propertyPath: stunTimer
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8897130281623748992, guid: 32907d0cbd30b6248a7419817e1becfa,
+        type: 3}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
+        type: 3}
     - target: {fileID: 722204863, guid: 32907d0cbd30b6248a7419817e1becfa, type: 3}
       propertyPath: m_Size.x
       value: 40.65775
