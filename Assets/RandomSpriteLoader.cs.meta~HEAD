@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/RandomSpriteLoader.cs.meta
+guid: b0242525b2c726c489afec5cfd8cafae
+MonoImporter:
+=======
+guid: 78f35f5b9bd813c4aa86143875ddcd5b
+folderAsset: yes
+DefaultImporter:
+>>>>>>> dev:Assets/TextMesh Pro/Plugins.meta
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
