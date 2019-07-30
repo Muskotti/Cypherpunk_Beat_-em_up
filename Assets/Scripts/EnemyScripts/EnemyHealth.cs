@@ -11,6 +11,9 @@ public class EnemyHealth : MonoBehaviour
     public float stunCountdown;
     bool isStunned;
 
+    public float deathBlood;
+    public float deathBloodCooldown;
+
     GameObject soundManager;
     public Animator animator;
 
@@ -33,6 +36,8 @@ public class EnemyHealth : MonoBehaviour
         isStunned = false;
         soundManager = GameObject.Find("SoundManager");
         cc = GetComponent<CharacterController>();
+        deathBlood = 0;
+        deathBloodCooldown = 0;
     }
 
     private void Update()
@@ -68,10 +73,28 @@ public class EnemyHealth : MonoBehaviour
         }
 
         // Death
-        if (health <= 0 && stunCountdown <= 0)
+        if (health <= 0)
         {
-            SpawnCredit();
-            Die();
+            if (stunCountdown <= 0)
+            {
+                SpawnCredit();
+                Die();
+                CancelInvoke("BloodEffect");
+            }
+            else
+            {
+                if (!IsInvoking("BloodEffect"))
+                {
+                    if (impact.y > -3)
+                    {
+                        InvokeRepeating("BloodEffect", 0.2f, 0.2f);
+                    }
+                    else
+                    {
+                        InvokeRepeating("BloodEffect", 0.1f, 0.1f);
+                    }
+                }
+            }
         }
 
         // Keycard location for last enemy
@@ -83,11 +106,6 @@ public class EnemyHealth : MonoBehaviour
 
     private void TakeDamage(String direction)
     {
-        // Blood splatter on the ground
-        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
-        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z - 0.5f);
-        splatter.transform.Rotate(90, 0, 0);
-
         GetComponent<AIPath>().enabled = false;
         // Activate enemy pathfinding, if not yet active
         if (GetComponent<AIDestinationSetter>().canMove == false)
@@ -128,16 +146,19 @@ public class EnemyHealth : MonoBehaviour
 
         if (health > 1)
         {
-            GameObject hitmarker = Instantiate(enemyhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
-            Destroy(hitmarker, 1f);
+            BloodEffect();
             soundManager.GetComponent<SoundManager>().hit1Play();
         }
         else
         {
+            if (health == 1)
+            {
+                soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
+            }
             soundManager.GetComponent<SoundManager>().hit2Play();
-            soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
             GameObject hitmarker = Instantiate(enemydead, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
             Destroy(hitmarker, 1f);
+            BloodEffect();
         }
 
         health -= 1;
@@ -164,6 +185,15 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject newBox = Instantiate(Credit);
         newBox.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
+    }
+
+    public void BloodEffect()
+    {
+        GameObject hitmarker = Instantiate(enemyhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
+        Destroy(hitmarker, 1f);
+        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z - 0.5f);
+        splatter.transform.Rotate(90, 0, 0);
     }
 
     private void Die()
@@ -195,6 +225,11 @@ public class EnemyHealth : MonoBehaviour
         {
             transform.Rotate(0, 0, -90);
             transform.localPosition = new Vector3(transform.localPosition.x + 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
+        }
+
+        if (transform.localPosition.y > 0.25)
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, 0.2f, transform.localPosition.z);
         }
 
         SendMessageUpwards("DecreaseChildAmount");
