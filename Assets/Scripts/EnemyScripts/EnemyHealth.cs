@@ -134,8 +134,11 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
+            if (health == 1)
+            {
+                soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
+            }
             soundManager.GetComponent<SoundManager>().hit2Play();
-            soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
             GameObject hitmarker = Instantiate(enemydead, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
             Destroy(hitmarker, 1f);
         }
