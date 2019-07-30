@@ -218,7 +218,7 @@ MonoBehaviour:
     type: 3}
   enemydead: {fileID: 4229384368839457702, guid: 438bc72ef4e66c541bf8df94739bf719,
     type: 3}
-  Credit: {fileID: 8187150367757764700, guid: dbd1fe1669e85b74fb53860f4b1058bd, type: 3}
+  Credit: {fileID: 8169227069098332663, guid: a0e7c349ae1a3bb48bbf88e58f1152fd, type: 3}
 --- !u!212 &8897130281623749023
 SpriteRenderer:
   m_ObjectHideFlags: 0
