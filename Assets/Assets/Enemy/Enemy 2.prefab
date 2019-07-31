@@ -242,6 +242,8 @@ MonoBehaviour:
   health: 0
   stunTimer: 0.2
   stunCountdown: 0
+  deathBlood: 0
+  deathBloodCooldown: 0
   animator: {fileID: 1342654961}
   bloodSplatter: {fileID: 6829656893431433828, guid: 51b9c8ec7a075274ca131bad3a21ba70,
     type: 3}
