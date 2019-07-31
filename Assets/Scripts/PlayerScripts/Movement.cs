@@ -164,6 +164,15 @@ public class Movement : MonoBehaviour
                         }
                         attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
                     }
+                    // UP and DOWN
+                    if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+                    {
+                        if (transform.localScale.x < 0)
+                        {
+                            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                        }
+                    }
+
                     // UP
                     if (Input.GetKey(KeyCode.W))
                     {
