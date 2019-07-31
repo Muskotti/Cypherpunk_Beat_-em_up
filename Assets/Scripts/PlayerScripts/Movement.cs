@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     CharacterController characterController;
     public float jumpSpeed = 8.0F;
     public float movementSpeed = 5.0f;
+    public float hitForce;
     private Vector3 moveDirection = Vector3.zero;
     public String direction;
     GameObject soundManager;
@@ -42,6 +43,7 @@ public class Movement : MonoBehaviour
         animator.SetBool("usingFist", false);
         direction = "right";
         Credit = SavedInfo.Credits;
+        hitForce = 30;
     }
 
     void Update()
@@ -407,6 +409,7 @@ public class Movement : MonoBehaviour
     public void UpgradePunch(bool status)
     {
         HeavyPunch = status;
+        hitForce = 60;
 
         // Changes Player sprite to have BFF
         animator.SetTrigger("fistSpriteTrigger");
