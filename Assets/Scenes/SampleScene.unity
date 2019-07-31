@@ -6973,6 +6973,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarPurple
       objectReference: {fileID: 0}
+    - target: {fileID: 5629522764156296162, guid: ad34d931b5db865449df4dfb890c9e32,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4369824666663081964, guid: ad34d931b5db865449df4dfb890c9e32,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7772,7 +7777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIeyVX0BJVgIAAP8EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMmSmzAQ/RWXzokLGK+5JdjjycFj1zipuXCRpcaoLCRKy3iZ8r9HEtgQ5gTV773u1wt8IiZ0BcRItVKMriUF9GOA/Dv6NmjBFzjjgxQ7doU7551RU3gSDpw3bJh08djLtCzBKEZ+igP35MgFrWC5VOWSHiCV2mgXzjHX4CAljVcLF/ocoHMjuDTPq38Obu6NgDCgWtZ4PpxPptOkR54Nx9F0FM+CxgrCcVkB9d5baTK6q+Jx4AnXVkPxLRDJOdONJ2QuVeg5xZW2riNHoAy7HoObaOhzFcAOhfGpu/JNnmswjTmFLwum3LDqvOiXrCdYYn2srX1gbn2lcZwEV3XS9Rd8OpkGPFeyfLkXjiNfxBSMHN/whWBtOjPuhhet9ziM6IT5Ee85vBcgXuVKSSuoA42yXmo1JItOqkdzaQHk2PJqs72grb5uNW63egvtn1POyn0YZVwHdlyGkc+9BpRbzm9nOFyJbjK5qDfxV8MffOieUwM8M6WNg5qCwrvbS6s8FS3DzHwz1qRSCQjhxnMFAnNz2bo0pr/DHtYp20Oesf9wmuINdv8eepIQbvlR1IO28vRYli7kaQ262FjDmYDWtAde3ZxSKUR9Yt2Z3GU7q3JMOrKDZfT/20Lx04REo6dZPk/yWRyR7/sRBaAQjZLRbBxNMAq3x4TrE/NtbbQZj9uaaJMLd2f3/8lgpXAVzp0qfFqxayk7I2cilzuiAMSmzvAwDsoVcR8mXVLmBrQDY5gI+0afGeKSHIFmj0RZ6HR5NgpnbZYMVexDGh/JUBr+Ihm6ods/UEsDBBQAAAgIAAAQIezWcASEbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJKhsVmygYmxRZqlUZqFoUGybpJJSmpqSqqBiZGJhamBWaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7JVfQElWAgAA/wQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7NZwBIRsAAAAdwAAAAkAJAAAAAAAAAAAAAAAowIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABaAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAQIexiSU+QVwIAAP4EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMly4jAQ/RVK5xnKJqxzmzGEzIFAhUzl4ouQ2liFLLm0hK3495Fkgx3nZFe/97pfL/YVMaFLIEaqpWJ0JSmgXz3k39GPXgO+wAnvpdiyC9w5H4ya3JNw4Lxhw6SLx16mZQFGMfJb7LknRy5oBcukKhZ0D4nURrtwhrkGBylpvFq40LWHTrXgXD8v/tm7uTcCwoBqWKNZfzaeTAYd8rQ/iibDeBo0VhCOixKo995IB8O7Kh4FnnBt1RTfApGcM117QuZchp4TXGrrOnIEyrDrMbiJ+j5XDmyfG5+6LV9nmQZTm1P4PGfKDavKi/7IaoIF1ofK2ifm1lcaxYPgqkq6+oZPxpOAZ0oWL/fCceSLmJyRwxs+E6xNa8bt8LzxHocRHTE/4B2HjxzEq1wqaQV1oFHWS62GwbyV6tFckgM5NLzKbCdoy+9bjZut3kL7p4SzYhdGGVeBLZdh5DOvAeWW89cZDlei60wu6k380/CO9+1zqoFnprRxUF1QeHc7aZWnokWYmW/GmkQqASFcey5BYG7OG5fGdHfYwVplO8gz9h9OXbzG7t9DRxLCDT+KOtBGHh/L0rk8rkDna2s4E9CY9sCrm1MihahOTH8FvWprVYZJS7W3jH49LRQ/jUk0fJpms0E2jSPyczekABSi4WA4HUVjjMLpMeHaxHxT+ayn45YmmuTCndn9d9JbKlyGa6cKH5fsUsiWPyYyuSUKQKyrDPcJaVCuiPsu6YIyN58tGMNEWDe6pohLcgCaPhKlodPFySicNllSVLJPaXwkRUn4iaTohm7/AVBLAwQUAAAICAAAECHs1nAEhGwAAAB3AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9Kz0FFQSi9KLMgoBgoYgjilmSkgdrSSobFZsoGJsUWapVGahaFBsm6SSUpqakqqgYmRiYWpgVmiUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAQIexiSU+QVwIAAP4EAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIezWcASEbAAAAHcAAAAJACQAAAAAAAAAAAAAAKQCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWwMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -99099,6 +99104,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1959761612501896581, guid: a91cd9b4a369d1742a4e637152e44201,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91cd9b4a369d1742a4e637152e44201, type: 3}
 --- !u!1001 &2129919956
@@ -99301,6 +99311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trashcan big
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422356781277058862, guid: 4529965e6903918479c34e3f1ee541b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7538398389797830185, guid: 4529965e6903918479c34e3f1ee541b7,
         type: 3}
@@ -99969,6 +99984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarGreen
       objectReference: {fileID: 0}
+    - target: {fileID: 5072034981779331771, guid: 939d65df24f35b24bb9c8f830eaf6a41,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 9035158266579077211, guid: 939d65df24f35b24bb9c8f830eaf6a41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100069,6 +100089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mainostaulu1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745991221290024537, guid: 8f1f76185bd25b04aa4d1e9ac2674493,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7745991221290024538, guid: 8f1f76185bd25b04aa4d1e9ac2674493,
         type: 3}
@@ -100400,6 +100425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: upgrade atm
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311512813623309652, guid: 9faddcea4da094a46b8693e377926572,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6602270445978891675, guid: 9faddcea4da094a46b8693e377926572,
         type: 3}
