@@ -165,7 +165,7 @@ public class Movement : MonoBehaviour
                         attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
                     }
                     // UP
-                    else if (Input.GetKey(KeyCode.W))
+                    if (Input.GetKey(KeyCode.W))
                     {
                         direction = "up";
                         animator.SetBool("lookingSide", false);
