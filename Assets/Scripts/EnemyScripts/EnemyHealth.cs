@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public float stunTimer;
     public float stunCountdown;
     bool isStunned;
+    float knockbackForce;
 
     public float deathBlood;
     public float deathBloodCooldown;
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
     public GameObject enemydead;
 
     public GameObject Credit;
+    GameObject player;
 
     CharacterController cc;
 
@@ -38,6 +40,8 @@ public class EnemyHealth : MonoBehaviour
         cc = GetComponent<CharacterController>();
         deathBlood = 0;
         deathBloodCooldown = 0;
+        knockbackForce = 20;
+        player = GameObject.Find("Player");
     }
 
     private void Update()
@@ -126,16 +130,16 @@ public class EnemyHealth : MonoBehaviour
             switch(direction)
             {
                 case "up":
-                    AddImpact(new Vector3(0, 0, 1), 30);
+                    AddImpact(new Vector3(0, 0, 1), player.GetComponent<Movement>().hitForce);
                     break;
                 case "down":
-                    AddImpact(new Vector3(0, 0, -1), 30);
+                    AddImpact(new Vector3(0, 0, -1), player.GetComponent<Movement>().hitForce);
                     break;
                 case "left":
-                    AddImpact(new Vector3(-1, 0, 0), 30);
+                    AddImpact(new Vector3(-1, 0, 0), player.GetComponent<Movement>().hitForce);
                     break;
                 case "right":
-                    AddImpact(new Vector3(1, 0, 0), 30);
+                    AddImpact(new Vector3(1, 0, 0), player.GetComponent<Movement>().hitForce);
                     break;
             }
         }
@@ -167,7 +171,7 @@ public class EnemyHealth : MonoBehaviour
     private void TakeHeavyDamage(String direction)
     {
         TakeDamage(direction);
-        AddImpact(new Vector3(0, -1, 0), 60);
+        AddImpact(new Vector3(0, -1, 0), player.GetComponent<Movement>().hitForce);
         stunCountdown = 0.7f;
     }
 

@@ -7028,6 +7028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 8
   movementSpeed: 5
+  hitForce: 0
   direction: 
   animator: {fileID: 586668547}
   attackHitboxes:
@@ -7190,8 +7191,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6550803142822742265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 2.9807, z: 2.5717}
+  m_LocalPosition: {x: 2.5, y: 0.00000059605, z: 0}
+  m_LocalScale: {x: 3, y: 7.4708266, z: 4.332286}
   m_Children: []
   m_Father: {fileID: 5248183167454704198}
   m_RootOrder: 0
@@ -7529,8 +7530,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -0.00000011920929, z: 0}
+  m_Size: {x: 3.6339808, y: 4.5480094, z: 4.790604}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8311490710460846556
 GameObject:
   m_ObjectHideFlags: 0
