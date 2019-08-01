@@ -102,9 +102,12 @@ public class EnemyHealth : MonoBehaviour
         }
 
         // Keycard location for last enemy
-        if (GetComponentInParent<KeyCardScript>().childs == 1)
+        if(GetComponentInParent<KeyCardScript>())
         {
-            GetComponentInParent<KeyCardScript>().SaveLocation(transform.position);
+            if (GetComponentInParent<KeyCardScript>().childs == 1)
+            {
+                GetComponentInParent<KeyCardScript>().SaveLocation(transform.position);
+            }
         }
     }
 

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelEnd : MonoBehaviour
 {
     GameObject player;
+    public GameObject E;
+    public GameObject Ending;
 
     bool playerInRange;
 
@@ -19,6 +20,7 @@ public class LevelEnd : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = true;
+            E.SetActive(true);
         }
     }
 
@@ -27,6 +29,7 @@ public class LevelEnd : MonoBehaviour
         if (other.gameObject == player)
         {
             playerInRange = false;
+            E.SetActive(false);
         }
     }
 
@@ -34,7 +37,7 @@ public class LevelEnd : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown("e"))
         {
-            SceneManager.LoadScene("LoadingScene");
+            Ending.SetActive(true);
         }
     }
 }
