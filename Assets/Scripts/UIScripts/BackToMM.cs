@@ -14,7 +14,9 @@ public class BackToMM : MonoBehaviour
 
     public void MainMenu()
     {
-        Time.timeScale = 1;
+        Debug.Log("asdasd");
         SceneManager.LoadScene("MainMenu");
     }
 }
+
+        Time.timeScale = 1;
