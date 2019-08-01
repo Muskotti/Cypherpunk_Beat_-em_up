@@ -40,6 +40,12 @@ public class EnemyHit : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        // Change target destination to exit point, when Player dies.
+        if (player.GetComponent<PlayerHealt>().currentHealth <= 0)
+        {
+            GetComponent<AIDestinationSetter>().target = GameObject.Find("Enemy exit point").transform;
+        }
     }
 
     void hitPlayer()
@@ -55,13 +61,24 @@ public class EnemyHit : MonoBehaviour
             // Knockback player to direction the enemy is punching from (if player is not blocking)
             if (!player.GetComponent<Movement>().Block)
             {
-                if (gameObject.transform.localScale.x < 0)
+                if (animator.GetBool("lookingUp"))
                 {
-                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(-3, -1, 0), 50);
+                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(0, -1, 3), 50);
                 }
-                else
+                else if (animator.GetBool("lookingDown"))
                 {
-                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(3, -1, 0), 50);
+                    player.GetComponent<PlayerHealt>().AddImpact(new Vector3(0, -1, -3), 50);
+                }
+                else if (animator.GetBool("lookingSide"))
+                {
+                    if (gameObject.transform.localScale.x < 0)
+                    {
+                        player.GetComponent<PlayerHealt>().AddImpact(new Vector3(-3, -1, 0), 50);
+                    }
+                    else
+                    {
+                        player.GetComponent<PlayerHealt>().AddImpact(new Vector3(3, -1, 0), 50);
+                    }
                 }
             }
             

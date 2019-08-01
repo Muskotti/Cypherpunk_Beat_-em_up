@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 8445282182457768836
     second: player_bff_front_walking_800px_3
+  - first:
+      213: -6442163078238927199
+    second: player_bff_front_walking_800px_4
+  - first:
+      213: -2511778742998067406
+    second: player_bff_front_walking_800px_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baaadc162c3c62f47b4d605e715df7af
+      spriteID: 01e3db0777a09a74bb34e9b4151ce1e9
       internalID: 5304116970276426395
       vertices: []
       indices: 
@@ -131,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a290d6a1e14d154e8293ad1e5b5ec58
+      spriteID: 2a08ea49e0190304397b4345b0e993df
       internalID: 5962906651466048343
       vertices: []
       indices: 
@@ -141,9 +147,9 @@ TextureImporter:
       name: player_bff_front_walking_800px_2
       rect:
         serializedVersion: 2
-        x: 1773
+        x: 1774
         y: 0
-        width: 429
+        width: 427
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1197e9076e03ec04e82365c64eaf683b
+      spriteID: 87b8832df822d734d8ff6c88d0bb3cde
       internalID: 5179243814597146241
       vertices: []
       indices: 
@@ -173,8 +179,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab65dc74e648494bad556876577204a
+      spriteID: d18de620b88b7db489b34c3946ac5170
       internalID: 8445282182457768836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_bff_front_walking_800px_4
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 0
+        width: 453
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa46a9ca7a542cd4ba4d82617f0f1b51
+      internalID: -6442163078238927199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_bff_front_walking_800px_5
+      rect:
+        serializedVersion: 2
+        x: 4174
+        y: 0
+        width: 427
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f1be4a00f893d4e979299866ff43b0
+      internalID: -2511778742998067406
       vertices: []
       indices: 
       edges: []

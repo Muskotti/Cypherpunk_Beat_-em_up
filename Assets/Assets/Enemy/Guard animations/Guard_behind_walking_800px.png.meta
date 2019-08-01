@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 6923643862477397965
     second: Guard_behind_walking_800px_3
+  - first:
+      213: 5452023134506945248
+    second: Guard_behind_walking_800px_4
+  - first:
+      213: -6336790312708379244
+    second: Guard_behind_walking_800px_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -99,9 +105,9 @@ TextureImporter:
       name: Guard_behind_walking_800px_0
       rect:
         serializedVersion: 2
-        x: 198
+        x: 199
         y: 0
-        width: 404
+        width: 403
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -110,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4f5942eb6f409b49a6b19b44ab74841
+      spriteID: b4b58011bb6f40646a87b460b853bdf3
       internalID: -410504514973967369
       vertices: []
       indices: 
@@ -131,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05da8245ff0edea45a4646ddcf75a548
+      spriteID: da254fbe63940584da094fdd29ecaa85
       internalID: 5341336537181197341
       vertices: []
       indices: 
@@ -143,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1798
         y: 0
-        width: 404
+        width: 403
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba3a2bad4028edd43830c04ff4b06d41
+      spriteID: e55749ce5b28b484f8aaea7e2b86dfb9
       internalID: -4693234924411187165
       vertices: []
       indices: 
@@ -162,7 +168,28 @@ TextureImporter:
       name: Guard_behind_walking_800px_3
       rect:
         serializedVersion: 2
-        x: 2598
+        x: 2599
+        y: 0
+        width: 403
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bf8169fab226a43b3ec86822799637
+      internalID: 6923643862477397965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_behind_walking_800px_4
+      rect:
+        serializedVersion: 2
+        x: 3398
         y: 0
         width: 404
         height: 800
@@ -173,8 +200,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f319926081ebe83449eb047634750df2
-      internalID: 6923643862477397965
+      spriteID: ef7dc7e47de07df41b3bd0eccdae8c85
+      internalID: 5452023134506945248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_behind_walking_800px_5
+      rect:
+        serializedVersion: 2
+        x: 4198
+        y: 0
+        width: 403
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cce68d4806df7044ab118eab3fcc91a
+      internalID: -6336790312708379244
       vertices: []
       indices: 
       edges: []

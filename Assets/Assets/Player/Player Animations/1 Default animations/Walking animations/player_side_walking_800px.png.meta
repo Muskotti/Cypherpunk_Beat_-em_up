@@ -104,16 +104,16 @@ TextureImporter:
         serializedVersion: 2
         x: 223
         y: 0
-        width: 404
+        width: 379
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76259225b44b2644a8eac764d6d496df
+      spriteID: 8e811e78d6b4aa74aa7d50d694547e1d
       internalID: -1278406545421808346
       vertices: []
       indices: 
@@ -127,14 +127,14 @@ TextureImporter:
         y: 0
         width: 279
         height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6767609, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd8f9bb17af0fc84ca8e53d494ee5589
+      spriteID: 8f203b08d2d86a24d9aeb0d479870981
       internalID: -449465043883906130
       vertices: []
       indices: 
@@ -149,13 +149,13 @@ TextureImporter:
         width: 25
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66075be11b5611d4292d431acfed0cdc
+      spriteID: 521dab8bc8665dc4ba0a3d45da086ad7
       internalID: -7585462694833147171
       vertices: []
       indices: 
@@ -165,18 +165,18 @@ TextureImporter:
       name: player_side_walking_800px_3
       rect:
         serializedVersion: 2
-        x: 1823
+        x: 1798
         y: 0
         width: 404
         height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5332469, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beda9bc040a8a5744a2b331400dcb043
+      spriteID: 993d327b43f9b4b4b9aedf9bcb6b581c
       internalID: 7272482264813122936
       vertices: []
       indices: 
@@ -186,18 +186,18 @@ TextureImporter:
       name: player_side_walking_800px_4
       rect:
         serializedVersion: 2
-        x: 2623
+        x: 2648
         y: 0
-        width: 379
+        width: 329
         height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5767997, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19dee417ba64cfe4eae2d0814357bebf
+      spriteID: 7601d3bedfdf568429de1c0bf93de72d
       internalID: 3712937598869133951
       vertices: []
       indices: 

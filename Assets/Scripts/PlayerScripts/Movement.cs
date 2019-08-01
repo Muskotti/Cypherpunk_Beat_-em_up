@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     CharacterController characterController;
     public float jumpSpeed = 8.0F;
     public float movementSpeed = 5.0f;
+    public float hitForce;
     private Vector3 moveDirection = Vector3.zero;
     public String direction;
     GameObject soundManager;
@@ -41,6 +42,8 @@ public class Movement : MonoBehaviour
         Credit = 0;
         animator.SetBool("usingFist", false);
         direction = "right";
+        Credit = SavedInfo.Credits;
+        hitForce = 30;
     }
 
     void Update()
@@ -161,8 +164,17 @@ public class Movement : MonoBehaviour
                         }
                         attackHitboxes[0].transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
                     }
+                    // UP and DOWN
+                    if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+                    {
+                        if (transform.localScale.x < 0)
+                        {
+                            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                        }
+                    }
+
                     // UP
-                    else if (Input.GetKey(KeyCode.W))
+                    if (Input.GetKey(KeyCode.W))
                     {
                         direction = "up";
                         animator.SetBool("lookingSide", false);
@@ -406,6 +418,7 @@ public class Movement : MonoBehaviour
     public void UpgradePunch(bool status)
     {
         HeavyPunch = status;
+        hitForce = 60;
 
         // Changes Player sprite to have BFF
         animator.SetTrigger("fistSpriteTrigger");
@@ -432,5 +445,10 @@ public class Movement : MonoBehaviour
     public int GetCredit()
     {
         return Credit;
+    }
+
+    public void SetCredits(int value)
+    {
+        Credit -= value;
     }
 }

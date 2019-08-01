@@ -6,18 +6,24 @@ using System;
 
 public class EnemyHealth : MonoBehaviour
 {
-    float health;
+    public float health;
     public float stunTimer;
     public float stunCountdown;
     bool isStunned;
+    float knockbackForce;
+
+    public float deathBlood;
+    public float deathBloodCooldown;
 
     GameObject soundManager;
     public Animator animator;
 
+    public GameObject bloodSplatter;
     public GameObject enemyhit;
     public GameObject enemydead;
 
     public GameObject Credit;
+    GameObject player;
 
     CharacterController cc;
 
@@ -28,10 +34,14 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         health = 3;
-        stunCountdown = stunTimer;
+        stunCountdown = 0;
         isStunned = false;
         soundManager = GameObject.Find("SoundManager");
         cc = GetComponent<CharacterController>();
+        deathBlood = 0;
+        deathBloodCooldown = 0;
+        knockbackForce = 20;
+        player = GameObject.Find("Player");
     }
 
     private void Update()
@@ -45,7 +55,7 @@ public class EnemyHealth : MonoBehaviour
         {
             GetComponent<AIPath>().enabled = true;
             isStunned = false;
-            stunCountdown = stunTimer;
+            stunCountdown = 0;
             animator.SetBool("isStunned", false);
 
             // Enable scripts after stun ends
@@ -64,6 +74,40 @@ public class EnemyHealth : MonoBehaviour
         {
             impact.y -= 20f * Time.deltaTime;
             cc.Move(impact * Time.deltaTime * 3);
+        }
+
+        // Death
+        if (health <= 0)
+        {
+            if (stunCountdown <= 0)
+            {
+                SpawnCredit();
+                Die();
+                CancelInvoke("BloodEffect");
+            }
+            else
+            {
+                if (!IsInvoking("BloodEffect"))
+                {
+                    if (impact.y > -3)
+                    {
+                        InvokeRepeating("BloodEffect", 0.2f, 0.2f);
+                    }
+                    else
+                    {
+                        InvokeRepeating("BloodEffect", 0.1f, 0.1f);
+                    }
+                }
+            }
+        }
+
+        // Keycard location for last enemy
+        if(GetComponentInParent<KeyCardScript>())
+        {
+            if (GetComponentInParent<KeyCardScript>().childs == 1)
+            {
+                GetComponentInParent<KeyCardScript>().SaveLocation(transform.position);
+            }
         }
     }
 
@@ -84,21 +128,21 @@ public class EnemyHealth : MonoBehaviour
         stunCountdown = stunTimer;
 
         // Knockback enemy, if it's in the air
-        if (impact.y > -3.9)
+        if (impact.y > -3.8)
         {
             switch(direction)
             {
                 case "up":
-                    AddImpact(new Vector3(0, 0, 1), 30);
+                    AddImpact(new Vector3(0, 0, 1), player.GetComponent<Movement>().hitForce);
                     break;
                 case "down":
-                    AddImpact(new Vector3(0, 0, -1), 30);
+                    AddImpact(new Vector3(0, 0, -1), player.GetComponent<Movement>().hitForce);
                     break;
                 case "left":
-                    AddImpact(new Vector3(-1, 0, 0), 30);
+                    AddImpact(new Vector3(-1, 0, 0), player.GetComponent<Movement>().hitForce);
                     break;
                 case "right":
-                    AddImpact(new Vector3(1, 0, 0), 30);
+                    AddImpact(new Vector3(1, 0, 0), player.GetComponent<Movement>().hitForce);
                     break;
             }
         }
@@ -109,31 +153,30 @@ public class EnemyHealth : MonoBehaviour
 
         if (health > 1)
         {
-            GameObject hitmarker = Instantiate(enemyhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
-            Destroy(hitmarker, 1f);
+            BloodEffect();
             soundManager.GetComponent<SoundManager>().hit1Play();
+            soundManager.GetComponent<SoundManager>().enemyDamageSoundPlay();
         }
         else
         {
+            if (health == 1)
+            {
+                soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
+            }
             soundManager.GetComponent<SoundManager>().hit2Play();
-            soundManager.GetComponent<SoundManager>().enemyDeathSoundPlay();
             GameObject hitmarker = Instantiate(enemydead, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
             Destroy(hitmarker, 1f);
+            BloodEffect();
         }
 
         health -= 1;
-
-        if (health <= 0) {
-            SpawnCredit();
-            Destroy(this.gameObject);
-        }
     }
 
     private void TakeHeavyDamage(String direction)
     {
         TakeDamage(direction);
-        AddImpact(new Vector3(0, -1, 0), 60);
-        stunCountdown = 1.5f;
+        AddImpact(new Vector3(0, -1, 0), player.GetComponent<Movement>().hitForce);
+        stunCountdown = 0.7f;
     }
 
     public void AddImpact(Vector3 dir, float force)
@@ -150,5 +193,56 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject newBox = Instantiate(Credit);
         newBox.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
+    }
+
+    public void BloodEffect()
+    {
+        GameObject hitmarker = Instantiate(enemyhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
+        Destroy(hitmarker, 1f);
+        GameObject splatter = Instantiate(bloodSplatter, transform.position + new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+        splatter.transform.position = new Vector3(transform.position.x, 0.006f, transform.position.z - 0.5f);
+        splatter.transform.Rotate(90, 0, 0);
+    }
+
+    private void Die()
+    {
+        animator.SetTrigger("deathTrigger");
+        animator.SetBool("isStunned", false);
+        animator.SetBool("isWalking", false);
+
+        MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour c in comps)
+        {
+            c.enabled = false;
+        }
+        GetComponent<CharacterController>().enabled = false;
+
+        GetComponent<SpriteRenderer>().enabled = true;
+
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
+        if (transform.localScale.x > 0)
+        {
+            transform.Rotate(0, 0, 90);
+            transform.localPosition = new Vector3(transform.localPosition.x - 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
+        }
+        else if (transform.localScale.x < 0)
+        {
+            transform.Rotate(0, 0, -90);
+            transform.localPosition = new Vector3(transform.localPosition.x + 0.5f, transform.localPosition.y - 0.4f, transform.localPosition.z - 0.4f);
+        }
+
+        if (transform.localPosition.y > 0.25)
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, 0.2f, transform.localPosition.z);
+        }
+
+        if (GetComponentInParent<KeyCardScript>())
+        {
+            SendMessageUpwards("DecreaseChildAmount");
+        }
     }
 }

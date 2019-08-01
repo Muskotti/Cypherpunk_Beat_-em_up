@@ -7,10 +7,8 @@ public class MainMenuScript : MonoBehaviour
 {
     GameObject soundManager;
 
-    private IEnumerator Start()
+    private void Start()
     {
-        yield return new WaitForSeconds(2.0f);
-
         soundManager = GameObject.Find("SoundManager");
         soundManager.GetComponent<SoundManager>().menuThemePlay();
     }

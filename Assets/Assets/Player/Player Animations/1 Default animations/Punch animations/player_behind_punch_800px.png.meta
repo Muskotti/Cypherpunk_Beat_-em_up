@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 2854621707557233170
     second: player_behind_punch_800px_1
+  - first:
+      213: 2704517833153128888
+    second: player_behind_punch_800px_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -93,18 +96,18 @@ TextureImporter:
       name: player_behind_punch_800px_0
       rect:
         serializedVersion: 2
-        x: 200
+        x: 199
         y: 0
-        width: 400
+        width: 477
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac1b0ac27e5e864795cfa4fdd12c929
+      spriteID: 165648c812b312e4abe38afc399f475e
       internalID: 5787807675671307613
       vertices: []
       indices: 
@@ -116,17 +119,38 @@ TextureImporter:
         serializedVersion: 2
         x: 1000
         y: 0
-        width: 400
+        width: 475
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e0c451e6d234ae4493e4453aa769d6e
+      spriteID: 5f2cf5e9f1942194195241547345976f
       internalID: 2854621707557233170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_behind_punch_800px_2
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 0
+        width: 402
+        height: 800
+      alignment: 9
+      pivot: {x: 0.5887679, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c0dafd15b014a43a15f29400ac0b58
+      internalID: 2704517833153128888
       vertices: []
       indices: 
       edges: []

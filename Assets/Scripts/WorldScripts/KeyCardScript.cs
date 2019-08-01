@@ -14,23 +14,25 @@ public class KeyCardScript : MonoBehaviour
     private void Start()
     {
         send = true;
+        childs = transform.childCount;
     }
 
     void Update()
     {
-        childs = transform.childCount;
         if (childs == 0 && send)
         {
             KeyCard.SendMessage("SetLocation", location);
             send = false;
-        } else if(childs == 1)
-        {
-            SaveLocation();
         }
     }
 
-    private void SaveLocation()
+    public void SaveLocation(Vector3 l)
     {
-        location = transform.GetChild(0).transform.position;
+        location = l;
+    }
+
+    public void DecreaseChildAmount()
+    {
+        childs--;
     }
 }

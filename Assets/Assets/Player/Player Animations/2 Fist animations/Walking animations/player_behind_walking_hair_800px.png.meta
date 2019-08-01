@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 7078324422133610745
     second: player_behind_walking_hair_800px_3
+  - first:
+      213: -1628204296516367005
+    second: player_behind_walking_hair_800px_4
+  - first:
+      213: 7257210287414861616
+    second: player_behind_walking_hair_800px_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -99,9 +105,9 @@ TextureImporter:
       name: player_behind_walking_hair_800px_0
       rect:
         serializedVersion: 2
-        x: 198
+        x: 199
         y: 0
-        width: 429
+        width: 427
         height: 800
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -110,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8df3c339b9dcabc40bb39c41f7fe97ef
+      spriteID: 0d704a28850cb484a858945cdc1c879c
       internalID: 1112905318778563811
       vertices: []
       indices: 
@@ -131,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 156c2c35c58896e40b770bc7330bd985
+      spriteID: 5ea8aa848a8dbc344bafe21df4573a83
       internalID: 6847579107309038275
       vertices: []
       indices: 
@@ -152,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffebed0192b38cd408375e337654562f
+      spriteID: e40ae614a0ac5fc42b8649840a8566a0
       internalID: 6096260886630889908
       vertices: []
       indices: 
@@ -162,7 +168,28 @@ TextureImporter:
       name: player_behind_walking_hair_800px_3
       rect:
         serializedVersion: 2
-        x: 2598
+        x: 2599
+        y: 0
+        width: 427
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a056db5ac9ebf8047a3f397dd1afc313
+      internalID: 7078324422133610745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_behind_walking_hair_800px_4
+      rect:
+        serializedVersion: 2
+        x: 3398
         y: 0
         width: 429
         height: 800
@@ -173,8 +200,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc0a2f3655b89c46b66dcd938973e1e
-      internalID: 7078324422133610745
+      spriteID: db8b6ece53154914cb62ae43f29f8f6e
+      internalID: -1628204296516367005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_behind_walking_hair_800px_5
+      rect:
+        serializedVersion: 2
+        x: 4198
+        y: 0
+        width: 429
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37d46d2246c06a4d93c2e36eaeaccd6
+      internalID: 7257210287414861616
       vertices: []
       indices: 
       edges: []
