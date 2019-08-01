@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: -337513592071189575
     second: Scientist_behind_walking_800px_3
+  - first:
+      213: -2927112491239416302
+    second: Scientist_behind_walking_800px_4
+  - first:
+      213: -1083984720275382761
+    second: Scientist_behind_walking_800px_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -99,9 +105,9 @@ TextureImporter:
       name: Scientist_behind_walking_800px_0
       rect:
         serializedVersion: 2
-        x: 198
+        x: 199
         y: 0
-        width: 404
+        width: 403
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -110,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 907648ec0b0dfe54eb319043ff9bdd82
+      spriteID: 27fb0caa17c7ddd4fa03c7e755e58f36
       internalID: -4222415834932270081
       vertices: []
       indices: 
@@ -131,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 827f8dffe4b1a5540a0791e02c1019ca
+      spriteID: 0308f56f39ff9814e9f1d2a500d0c7ec
       internalID: 2748431378795229493
       vertices: []
       indices: 
@@ -143,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1798
         y: 0
-        width: 404
+        width: 403
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e456b95267fb89541997bf76788ce3d3
+      spriteID: 6bb0bf310393c5d46a685be0ae4d129e
       internalID: -5534893135941841670
       vertices: []
       indices: 
@@ -162,7 +168,28 @@ TextureImporter:
       name: Scientist_behind_walking_800px_3
       rect:
         serializedVersion: 2
-        x: 2598
+        x: 2599
+        y: 0
+        width: 403
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd370d403ebf29d40959813967c85473
+      internalID: -337513592071189575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_behind_walking_800px_4
+      rect:
+        serializedVersion: 2
+        x: 3398
         y: 0
         width: 404
         height: 800
@@ -173,8 +200,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 151557685d353e24c8c0573c9b25dd49
-      internalID: -337513592071189575
+      spriteID: 3cb7f60d658fdc24b9837ac44944814c
+      internalID: -2927112491239416302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_behind_walking_800px_5
+      rect:
+        serializedVersion: 2
+        x: 4198
+        y: 0
+        width: 403
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd70b8b20ece26f4187179b2c71e6c48
+      internalID: -1083984720275382761
       vertices: []
       indices: 
       edges: []

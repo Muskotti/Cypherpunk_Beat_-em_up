@@ -239,6 +239,9 @@ public class EnemyHealth : MonoBehaviour
             transform.localPosition = new Vector3(transform.localPosition.x, 0.2f, transform.localPosition.z);
         }
 
-        SendMessageUpwards("DecreaseChildAmount");
+        if (GetComponentInParent<KeyCardScript>())
+        {
+            SendMessageUpwards("DecreaseChildAmount");
+        }
     }
 }
