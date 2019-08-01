@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -2601523381200827928
     second: Scientist_behind_punch_800px_1
+  - first:
+      213: -7767974268600721868
+    second: Scientist_behind_punch_800px_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -93,9 +96,9 @@ TextureImporter:
       name: Scientist_behind_punch_800px_0
       rect:
         serializedVersion: 2
-        x: 200
+        x: 199
         y: 0
-        width: 400
+        width: 477
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -104,7 +107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f49a88cf6e1ee740acaa761f0b43d2c
+      spriteID: 4d7d1499a40266543814d31130d0dea4
       internalID: -3083060743675785431
       vertices: []
       indices: 
@@ -116,7 +119,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1000
         y: 0
-        width: 400
+        width: 475
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,8 +128,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90317b833a1a79c4f85f603b9969747f
+      spriteID: ab1e7937cc9eeb94cabdeb31f18565dd
       internalID: -2601523381200827928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_behind_punch_800px_2
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 0
+        width: 402
+        height: 800
+      alignment: 9
+      pivot: {x: 0.59, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a194aef06d8979948aaa3699e7089fab
+      internalID: -7767974268600721868
       vertices: []
       indices: 
       edges: []
