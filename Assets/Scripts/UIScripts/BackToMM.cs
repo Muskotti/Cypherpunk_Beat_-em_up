@@ -5,18 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class BackToMM : MonoBehaviour
 {
-    GameObject player;
-
-    public void Start()
-    {
-        player = GameObject.Find("Player");
-    }
 
     public void MainMenu()
     {
-        Debug.Log("asdasd");
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 }
-
-        Time.timeScale = 1;
