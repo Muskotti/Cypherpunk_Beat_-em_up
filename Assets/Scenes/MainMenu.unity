@@ -878,6 +878,7 @@ MonoBehaviour:
   hitSound1: {fileID: 0}
   hitSound2: {fileID: 0}
   enemyDeath: {fileID: 0}
+  enemyDamage: {fileID: 0}
   buttonClick: {fileID: 8300000, guid: 5287b6758c646e94885d133be42f4ba2, type: 3}
   creditPickup: {fileID: 0}
   keycardPickup: {fileID: 0}
@@ -1231,7 +1232,7 @@ PrefabInstance:
     - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
         type: 3}
       propertyPath: m_text
-      value: Cyber' Up
+      value: Cyber 'Up
       objectReference: {fileID: 0}
     - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
         type: 3}
@@ -1242,6 +1243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_margin.w
       value: 5.664275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854848405729949237, guid: 48f3c0efacb7b774ca7ed03500001219,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f3c0efacb7b774ca7ed03500001219, type: 3}
