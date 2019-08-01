@@ -22332,7 +22332,7 @@ MonoBehaviour:
   hitSound1: {fileID: 8300000, guid: 8ea040ee636a82a41a62d5788b2d1791, type: 3}
   hitSound2: {fileID: 8300000, guid: 0a624f07e3d20de4aa8df3f5ff583553, type: 3}
   enemyDeath: {fileID: 8300000, guid: 8a0de2e9cfb435c4e87440bd3720ff86, type: 3}
-  enemyDamage: {fileID: 0}
+  enemyDamage: {fileID: 8300000, guid: ebc8a81ee49ea1144962c2c0e8c09001, type: 3}
   buttonClick: {fileID: 8300000, guid: 5287b6758c646e94885d133be42f4ba2, type: 3}
   creditPickup: {fileID: 8300000, guid: f0abc3d917dfca54390f59db819e217a, type: 3}
   keycardPickup: {fileID: 8300000, guid: 6dfe8f2754e448643beca783baa6a459, type: 3}
