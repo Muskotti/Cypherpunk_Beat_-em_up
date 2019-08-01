@@ -61,7 +61,7 @@ public class SoundManager : MonoBehaviour
     public void enemyDeathSoundPlay()
     {
         audioSource.pitch = 1f;
-        audioSource.PlayOneShot(enemyDeath, 0.8f);
+        audioSource.PlayOneShot(enemyDeath, 1f);
     }
 
     // Pickup sound effects
