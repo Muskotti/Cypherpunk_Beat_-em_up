@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 4009961089081908842
     second: player_side_punch_hair_800px_1
+  - first:
+      213: -1092923638520204738
+    second: player_side_punch_hair_800px_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -93,9 +96,9 @@ TextureImporter:
       name: player_side_punch_hair_800px_0
       rect:
         serializedVersion: 2
-        x: 225
+        x: 199
         y: 0
-        width: 325
+        width: 352
         height: 800
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -104,7 +107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fb2fb60f185ea54b9ddc8e27560a626
+      spriteID: 0fa0e5bab4e5eff4f8d8eba8859dae12
       internalID: -4576506012579506602
       vertices: []
       indices: 
@@ -114,19 +117,40 @@ TextureImporter:
       name: player_side_punch_hair_800px_1
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 0
-        width: 500
+        width: 376
         height: 800
       alignment: 9
-      pivot: {x: 0.3223237, y: 0.5}
+      pivot: {x: 0.400075, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0ce131f8c804a44086381c879cbbe3f
+      spriteID: d84ea0af8662486438657599d29d6f91
       internalID: 4009961089081908842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_side_punch_hair_800px_2
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 0
+        width: 501
+        height: 800
+      alignment: 9
+      pivot: {x: 0.2986376, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1081eafe549bd6d4b8546e08ed1a0e83
+      internalID: -1092923638520204738
       vertices: []
       indices: 
       edges: []
