@@ -96,6 +96,7 @@ public class PlayerHealt : MonoBehaviour
 
             Debug.Log(gameObject.GetComponent<Movement>().Block);
             soundManager.GetComponent<SoundManager>().takeDamagePlay();
+            soundManager.GetComponent<SoundManager>().hit1Play();
             currentHealth -= amount;
             GameObject hitmarker = Instantiate(playerhit, transform.position + new Vector3(0.0f, 0.1f, 0.0f), Quaternion.identity) as GameObject;
             Destroy(hitmarker, 0.2f);

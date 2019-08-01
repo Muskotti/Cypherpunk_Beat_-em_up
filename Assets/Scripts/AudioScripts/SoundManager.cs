@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip hitSound1;
     public AudioClip hitSound2;
     public AudioClip enemyDeath;
+    public AudioClip enemyDamage;
 
     // Pickup sounds
     public AudioClip buttonClick;
@@ -56,6 +57,12 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.pitch = 1f;
         audioSource.PlayOneShot(hitSound2, 2f);
+    }
+
+    public void enemyDamageSoundPlay()
+    {
+        audioSource.pitch = 1f;
+        audioSource.PlayOneShot(enemyDamage, 1f);
     }
 
     public void enemyDeathSoundPlay()

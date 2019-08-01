@@ -155,6 +155,7 @@ public class EnemyHealth : MonoBehaviour
         {
             BloodEffect();
             soundManager.GetComponent<SoundManager>().hit1Play();
+            soundManager.GetComponent<SoundManager>().enemyDamageSoundPlay();
         }
         else
         {
