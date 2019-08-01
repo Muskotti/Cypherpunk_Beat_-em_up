@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -4306725425179697834
     second: Soldier_behind_punch_800px_1
+  - first:
+      213: -3713195048543157802
+    second: Soldier_behind_punch_800px_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,16 +98,16 @@ TextureImporter:
         serializedVersion: 2
         x: 175
         y: 0
-        width: 450
+        width: 551
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575733d2f4b041047b8cbe1f969704b2
+      spriteID: ed0abad9813013c4287d5bf403e61f1b
       internalID: -149536289984476645
       vertices: []
       indices: 
@@ -114,19 +117,40 @@ TextureImporter:
       name: Soldier_behind_punch_800px_1
       rect:
         serializedVersion: 2
-        x: 975
+        x: 974
         y: 0
-        width: 450
+        width: 501
         height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.53, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea427c414208d944a6c10e078cf9d69
+      spriteID: 55a18066782ec2a4bb52a5c521f89a7a
       internalID: -4306725425179697834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_behind_punch_800px_2
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 0
+        width: 451
+        height: 800
+      alignment: 9
+      pivot: {x: 0.59, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68514c3819575f64bb94e31a61ea3a33
+      internalID: -3713195048543157802
       vertices: []
       indices: 
       edges: []
